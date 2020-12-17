@@ -11,9 +11,6 @@
 }
 
 body {
-}
-
-body {
   font-weight: 300;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
 
@@ -48,6 +45,10 @@ a:hover, a:focus {
   margin-top: 4px;
 }
 
+span.active {
+  border-bottom: 1px solid $secondary;
+}
+
 .logo-finstral {
   position: relative;
   bottom: 1px;
@@ -56,6 +57,33 @@ a:hover, a:focus {
 
 .logo {
   height: 2.5rem;
+}
+
+.dropdown-menu {
+  text-align: right;
+  border: 0;
+
+  .dropdown-item {
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+  }
+}
+
+@media (min-width: 991.99px) {
+  .dropdown-toggle.show {
+    color: rgb(253, 253, 253);
+    border-radius: .25rem .25rem 0 0;
+    background-color: $secondary;
+  }
+
+  .dropdown-menu-dark {
+    background-color: $secondary;
+    border-radius: .25rem 0 .25rem .25rem;
+
+    .dropdown-item:hover, .dropdown-item:focus {
+      background-color: $active-color;
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -91,7 +119,7 @@ a:hover, a:focus {
     a, a:hover, a:focus {
       font-size: 12px;
       line-height: 2em;
-      font-family: "Myriad Pro", 'Montserrat';
+      font-family: "PT Sans", 'Montserrat', "Helvetica";
       color: rgb(253, 253, 253);
     }
 
@@ -101,12 +129,6 @@ a:hover, a:focus {
 
     .dropdown-menu {
       background: transparent;
-      border: 0;
-      text-align: right;
-
-      .dropdown-item {
-        font-weight: bold;
-      }
     }
   }
 
