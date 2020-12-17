@@ -1,2 +1,1 @@
-# marcbruna
-Marc Bruna Fuster
+# jekyll-blank-template

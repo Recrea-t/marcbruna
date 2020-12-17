@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary p-0 fixed-top">
+	<div class="container">
+
+		<span class="navbar-text text-dark p-0">
+			<a href="phone:{{ site.phone.number }}">
+				<i class="fa fa-phone"></i>
+			</a>
+			<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+			| Distribuidor de
+			<img src="/assets/img/Logo_Finstral.svg" alt="Finstral" class="logo-finstral" />
+		</span>
+
+		<ul class="navbar-nav flex-row ms-auto p-0 mb-lg-0">
+			<li class="nav-item ps-2 ps-lg-0">
+				<a class="nav-link py-0" rel="tooltip" title="{{ site.twitter.title }}"
+					href="https://twitter.com/{{ site.twitter.username | escape }}" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li class="nav-item ps-2 ps-lg-0">
+				<a class="nav-link py-0" rel="tooltip" title="{{ site.facebook.title }}"
+					href="https://www.facebook.com/{{ site.facebook.username | escape }}" target="_blank">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+			</li>
+			<li class="nav-item ps-2 ps-lg-0">
+				<a class="nav-link py-0" rel="tooltip" title="{{ site.instagram.title }}"
+					href="https://www.instagram.com/{{ site.instagram.username | escape }}" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-white bg-white static-top p-0" aria-label="Main navigation">
+	<div class="container">
+		<!--<div class="row w-100 justify-content-between">-->
+		<div>
+			<a class="navbar-brand py-0" href="/" title="{{ site.title | escape }}">
+				<img src="/assets/img/Logo.svg" alt="" class="logo" />
+			</a>
+		</div>
+
+
+		<button class="navbar-toggler ms-auto mb-4 p-0 border-0" type="button" data-bs-toggle="offcanvas"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-bar"></span>
+			<span class="navbar-toggler-bar"></span>
+			<span class="navbar-toggler-bar"></span>
+		</button>
+
+		<div class="align-self-end">
+			<div class="navbar-collapse offcanvas-collapse px-0" id="navbarsExampleDefault">
+				<button class="navbar-toggler btn-close btn-close-white w-100" type="button" data-bs-toggle="offcanvas-close"
+					aria-label="Toggle navigation">
+				</button>
+
+				<ul class="navbar-nav me-3 me-lg-auto mb-0 fw-bold float-end">
+					<li class="nav-item">
+						<a class="nav-link py-0 text-sm-uppercase" rel="tooltip" href="#">Inici</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link py-0 dropdown-toggle text-sm-uppercase" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false" rel="tooltip" href="#">Serveis</a>
+						<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Portes</a></li>
+							<li><a class="dropdown-item" href="#">Finestres</a></li>
+							<li><a class="dropdown-item" href="#">Cuines</a></li>
+							<li><a class="dropdown-item" href="#">Mobles a mida</a></li>
+							<li><a class="dropdown-item" href="#">Parquets</a></li>
+							<li><a class="dropdown-item" href="#">Fusteria en general</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-0 text-sm-uppercase" rel="tooltip" href="#clients">Clients</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>

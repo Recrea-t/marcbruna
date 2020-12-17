@@ -1,0 +1,15 @@
+<footer class="footer bg-secondary">
+	<div class="container-fluid">
+		<div class="credits text-center text-white">
+			<span class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }} | DISSENY: {{ site.author }}</span>
+		</div>
+</footer>
+
+
+<!-- Core JS Files -->
+<script src="{{ "/assets/vendor/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/assets/vendor/popper.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/assets/vendor/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+<!-- Custom JS -->
+<script src="{{ "assets/js/custom.js" | relative_url}}" type="text/javascript"></script>
