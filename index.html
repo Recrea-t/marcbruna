@@ -1,60 +1,103 @@
 ---
-layout: default
+layout: home
 title: Inici
 ---
 
-<h1 class="my-4">Page Heading
-	<small>Secondary Text</small>
-</h1>
+<div style="overflow: hidden;">
+	<h2 class="my-3">Serveis</h2>
+	<div class="sep"><span></span></div>
+</div>
 
-<div class="row">
-
-	<div class="col-md-8">
-		<img class="img-fluid" src="http://placehold.it/750x500" alt="">
+<div class="row row-cols-2 row-cols-md-3 my-3 g-4">
+	{%- for servei in site.serveis -%}
+	<div class="col">
+		<div class="servei card text-center h-100">
+			<img class="bd-placeholder-img mx-auto" src="/assets/img/Icones_serveis_{{ servei | remove:" " }}.svg" alt="" />
+			<div class="card-body d-flex flex-column">
+				<a href="#{{ servei | url_encode }}" class="w-100 btn btn-lg btn-primary mt-auto">{{ servei }}</a>
+			</div>
+		</div>
 	</div>
+	{% endfor -%}
+</div>
 
-	<div class="col-md-4">
-		<h3 class="my-3">Project Description</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-			varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis
-			placerat, felis enim.</p>
-		<h3 class="my-3">Project Details</h3>
-		<ul>
-			<li>Lorem Ipsum</li>
-			<li>Dolor Sit Amet</li>
-			<li>Consectetur</li>
-			<li>Adipiscing Elit</li>
-		</ul>
-	</div>
+<div style="overflow: hidden;">
+	<h2 class="my-3">Clients</h2>
+	<div class="sep"><span></span></div>
+</div>
 
 </div>
 
-<h3 class="my-4">Related Projects</h3>
+<div class="container-fluid bg-primary mt-5 mb-3">
+	<div class="container">
+		<div class="row row-cols-3 g-4">
+			<div class="col">
+				<div class="client card">
+					<div class="card-body position-relative">
+						<div class="profile position-absolute top-0 start- translate-middle-y rounded-circle bg-danger p-2">
+						</div>
+						<div class="card-subtitle mt-4">
+							<p><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
+									odio, gravida pellentesque
+									urna
+									varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="client card">
+					<div class="card-body position-relative">
+						<div class="profile position-absolute top-0 start- translate-middle-y rounded-circle bg-danger p-2">
+						</div>
+						<div class="card-subtitle mt-4">
+							<p><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
+									odio, gravida pellentesque
+									urna
+									varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="client card">
+					<div class="card-body position-relative">
+						<div class="profile position-absolute top-0 start- translate-middle-y rounded-circle bg-danger p-2">
+						</div>
+						<div class="card-subtitle mt-4">
+							<p><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
+									odio, gravida pellentesque
+									urna
+									varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="row">
-
-	<div class="col-md-3 col-sm-6 mb-4">
-		<a href="#">
-			<img class="img-fluid" src="http://placehold.it/500x300" alt="">
-		</a>
+		<div class="d-flex justify-content-between py-5">
+			<img style="height: 40px;" src="/assets/img/Logo_LaTona_TR.png" alt="Bar Bodega La Tona" />
+			<img style="height: 40px;" src="/assets/img/orri_img_logotipo.png" alt="Bar Bodega La Tona" />
+			<img style="height: 40px;" src="/assets/img/logotip_detallista.png" alt="Bar Bodega La Tona" />
+		</div>
 	</div>
-
-	<div class="col-md-3 col-sm-6 mb-4">
-		<a href="#">
-			<img class="img-fluid" src="http://placehold.it/500x300" alt="">
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-6 mb-4">
-		<a href="#">
-			<img class="img-fluid" src="http://placehold.it/500x300" alt="">
-		</a>
-	</div>
-
-	<div class="col-md-3 col-sm-6 mb-4">
-		<a href="#">
-			<img class="img-fluid" src="http://placehold.it/500x300" alt="">
-		</a>
-	</div>
+</div>
 
 </div>
+<div class="container">
+	<div style="overflow: hidden;">
+		<h2 class="my-3">Contacta amb nosaltres</h2>
+		<div class="sep"><span></span></div>
+	</div>
+
+	<div class="row row-cols-1 row-cols-md-2 my-3 g-4">
+		<div class="col">
+		</div>
+		<div class="col">
+			<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.0012556821384!2d1.1288096146198052!3d42.40641827918378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a605e0c8cda76f%3A0x3ffaf0fef97f3ad0!2sMarc%20Bruna%2C%20Fuster!5e0!3m2!1sen!2ses!4v1608391599370!5m2!1sen!2ses"
+					frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>

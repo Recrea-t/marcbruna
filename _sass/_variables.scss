@@ -1,8 +1,16 @@
 // Your variable overrides
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  //xl: 1140px,
+  xl: 994px,
+  xxl: 1320px
+);
+
 $primary: #fff037;
 $secondary: #575756;
 $active-color: #2a2a2a;
-
 
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";

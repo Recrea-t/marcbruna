@@ -1,5 +1,5 @@
 title: "Marc Bruna Fuster"
-tagline: "An awesome tagline"
+tagline: "El teu fuster al Pallars Sobirà"
 description: >- # this means to ignore newlines until "baseurl:"
  Add description here
 author: "Recrea't"
@@ -64,3 +64,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
+serveis:
+  - Portes
+  - Finestres
+  - Cuines
+  - Mobles a mida
+  - Parquets
+  - Fusteria en general
