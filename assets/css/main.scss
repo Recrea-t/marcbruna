@@ -181,7 +181,8 @@ footer {
   background-image: url('../img/capcelera.jpg');
   background-position: top;
   background-repeat: no-repeat;
-  background-size: auto (891px / 1336px)*100%;
+  background-size: 100% auto;
+  //(891px / 1336px)*100%;
   background-color: white;
   min-height: calc(100vh - 6rem);
   max-height: 999px;
@@ -241,7 +242,6 @@ footer {
 
   @media (min-width: 768px) {
     img {
-      width: 40%;
       font-size: 3.5rem;
     }
     a.btn {
@@ -253,6 +253,7 @@ footer {
 .client.card {
   border: 0;
   margin-top: 4.5rem;
+  margin-right: 1.5rem;
   background: transparent;
 
   .card-body {
@@ -263,4 +264,24 @@ footer {
       width: 5rem;
     }
   }
+}
+
+@media (max-width: 991.98px) {
+  .scrollable {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .client.card {
+    min-width: 45%;
+  }
+}
+
+.client-logo {
+  height: 2.5rem;
 }
