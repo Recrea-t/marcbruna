@@ -9,4 +9,9 @@
 		document.querySelector('.offcanvas-collapse').classList.toggle('open')
 		document.querySelector('.dropdown').classList.toggle('dropstart')
 	})
+
+	$('.thumbnail').on('click', function () {
+		document.getElementById(this.dataset.expanded).src = this.src;
+		return false;
+	});
 })()

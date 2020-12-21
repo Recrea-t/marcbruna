@@ -31,7 +31,7 @@ title: Portes
 	{% if image.path contains porta.folder %}
 	{% if image.path contains '01' %}
 	<div class="col-8">
-		<img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+		<img id="{{ porta.folder }}Id" class="expanded img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
 	</div>
 	{% endif %}
 	{% endif %}
@@ -40,13 +40,10 @@ title: Portes
 		<div class="row row-cols-2 g-3">
 			{% for image in image_files %}
 			{% if image.path contains porta.folder %}
-			{% unless image.path contains '01' %}
 			<div class="col">
-				<a href="#" class="d-block h-100">
-					<img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-				</a>
+				<img class="thumbnail img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image"
+					data-expanded="{{ porta.folder }}Id" />
 			</div>
-			{% endunless %}
 			{% endif %}
 			{% endfor %}
 		</div>
