@@ -8,9 +8,14 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+$font-size-base: 1rem;
+$h1-font-size: 3rem;
+$h2-font-size: 1.2rem;
+
 $primary: #fff037;
 $secondary: #575756;
 $active-color: #2a2a2a;
 
 // Bootstrap and its default variables
+@import '../node_modules/bootstrap/scss/functions';
 @import "../node_modules/bootstrap/scss/bootstrap";

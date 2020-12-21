@@ -11,8 +11,7 @@
 }
 
 body {
-  font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   overflow-x: hidden; /* Prevent scroll on narrow devices */
   padding-top: 2.5em;
@@ -28,21 +27,60 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+a.btn {
+  border: 0;
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.75;
+
+  &:hover {
+    border: 0;
+    color: white;
+  }
+}
+
+.btn-primary {
+  color: $secondary;
+
+  &:hover {
+    background: $secondary;
+  }
+}
+
+.btn-secondary {
+  color: white;
+
+  &:hover {
+    background: $active-color;
+  }
+}
+
+@media (min-width: 1200px) {
+  a.btn {
+    font-size: .9rem;
+  }
+}
+
 h1, h2 {
   color: black;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
 h1 {
-  @include font-size(4.5rem);
   line-height: 1.111;
   background-color: $primary;
+
+  span::before {
+    content: "\A";
+    white-space: pre;
+  }
 }
 
 h2 {
-  @include font-size(1.2rem);
   line-height: 0.75;
+  color: $secondary;
   float: left;
 }
   .sep {
@@ -58,10 +96,26 @@ h2 {
     }
   }
 
+.text-sm {
+  font-size: 0.8rem !important;
+}
+
+@media (min-width: 1200px) {
+  .text-sm {
+    font-size: 1rem !important;
+  }
+}
+
 /* Navbars */
 
 .navbar.fixed-top, footer {
-  @include font-size(0.85rem);
+  font-size: 0.7rem !important;
+}
+
+@media (min-width: 1200px) {
+  .navbar.fixed-top, footer {
+    font-size: 0.85rem !important;
+  }
 }
 
 .navbar-toggler-bar {
@@ -118,12 +172,6 @@ span.active {
   }
 }
 
-@media (max-width: 1200px) {
-  .navbar.fixed-top, footer {
-    font-size: 11px;
-  }
-}
-
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
@@ -142,7 +190,6 @@ span.active {
 
     .navbar-toggler {
        float: right;
-       font-size: 1rem;
        border: 0;
        padding-top: 2.5rem;
        margin-right: 1rem;
@@ -150,9 +197,7 @@ span.active {
     }
 
     a, a:hover, a:focus {
-      font-size: 12px;
       line-height: 2em;
-      font-family: "PT Sans", 'Montserrat', "Helvetica";
       color: rgb(253, 253, 253);
     }
 
@@ -198,16 +243,10 @@ footer {
 
     .title-tagline {
       text-align: left;
-      max-width: 730px;
+      max-width: 600px;
       display: block;
       z-index: 2;
     }
-  }
-}
-
-@media (max-width: 991.98px) {
-.title-tagline {
-    max-width: 450px;
   }
 }
 
@@ -217,36 +256,10 @@ footer {
   border: 0;
 
   img {
-    font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
-
-
-  a.btn {
-    border: 0;
-    font-size: .6rem;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    line-height: 0.75;
-
-    &:hover {
-      border: 0;
-      color: white;
-      background: $active-color;
-    }
-  }
-
-  @media (min-width: 768px) {
-    img {
-      font-size: 3.5rem;
-    }
-    a.btn {
-      font-size: 1.2rem;
-    }
   }
 }
 
@@ -279,9 +292,16 @@ footer {
 
   .client.card {
     min-width: 45%;
+    min-height: 45%;
   }
 }
 
 .client-logo {
   height: 2.5rem;
+}
+
+.configurador {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

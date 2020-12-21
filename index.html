@@ -14,21 +14,22 @@ title: Inici
 		<div class="servei card text-center h-100">
 			<img class="bd-placeholder-img mx-auto" src="/assets/img/Icones_serveis_{{ servei | remove:" " }}.svg" alt="" />
 			<div class="card-body d-flex flex-column">
-				<a href="#{{ servei | url_encode }}" class="w-100 btn btn-lg btn-primary mt-auto">{{ servei }}</a>
+				<a href="{{ servei | url_encode | downcase |remove: "+" }}.html"
+					class="w-100 btn btn-lg btn-primary mt-auto">{{ servei }}</a>
 			</div>
 		</div>
 	</div>
 	{% endfor -%}
 </div>
 
-<div style="overflow: hidden;">
+<div style="overflow: hidden;" id="clients">
 	<h2 class="my-3">Clients</h2>
 	<div class="sep"><span></span></div>
 </div>
 
 </div>
 
-<div class="container-fluid scrollable bg-primary mt-5 mb-3">
+<div class="container-fluid scrollable bg-primary">
 	<div class="container">
 		<div class="d-flex flex-row flex-nowrap justify-content-md-between">
 			{%- for client in site.data.clients -%}
@@ -52,8 +53,10 @@ title: Inici
 </div>
 
 </div>
+
+
 <div class="container">
-	<div style="overflow: hidden;">
+	<div id="contacte" style="overflow: hidden;">
 		<h2 class="my-3">Contacta amb nosaltres</h2>
 		<div class="sep"><span></span></div>
 	</div>

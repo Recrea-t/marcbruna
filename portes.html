@@ -1,0 +1,63 @@
+---
+layout: default
+title: Portes
+---
+{% assign image_files = site.static_files | where: "image", true %}
+
+{%- for porta in site.data.portes -%}
+<div style="overflow: hidden;">
+	<h2 class="my-3">{{ porta.name }}</h2>
+	<div class="sep"><span></span></div>
+</div>
+
+<p class="text-sm">{{ porta.description }}</p>
+
+<div class="row row-cols-3 my-3 g-0">
+	{% if porta.cataleg %}
+	<div class="col-8">
+		<img class="img-fluid" src="/assets/img/portes/2500hires-tueren-290-1.jpg" alt="" />
+	</div>
+
+	<div class="col bg-primary p-3 d-flex flex-column">
+		<div class="configurador h-100 m-3"
+			style="background-image: url('/assets/img/portes/finstral-haustuerkonfigurator-de.png');">
+		</div>
+		<div class="text-center">
+			<a href="#" class="btn btn-secondary mt-auto">Configurador</a>
+		</div>
+	</div>
+	{% else %}
+	{% for image in image_files %}
+	{% if image.path contains porta.folder %}
+	{% if image.path contains '01' %}
+	<div class="col-8">
+		<img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+	</div>
+	{% endif %}
+	{% endif %}
+	{% endfor %}
+	<div class="col px-3">
+		<div class="row row-cols-2 g-3">
+			{% for image in image_files %}
+			{% if image.path contains porta.folder %}
+			{% unless image.path contains '01' %}
+			<div class="col">
+				<a href="#" class="d-block h-100">
+					<img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+				</a>
+			</div>
+			{% endunless %}
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	{% endif %}
+</div>
+
+<div class="">
+	<a href="#" class="btn btn-secondary mt-auto">Demanar Pressupost</a>
+	{% if porta.cataleg %}
+	<a href="#" class="btn btn-secondary mt-auto">Catàleg</a>
+	{% endif %}
+</div>
+{% endfor -%}
