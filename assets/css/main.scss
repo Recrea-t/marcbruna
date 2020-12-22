@@ -70,6 +70,7 @@ h1, h2 {
 
 h1 {
   line-height: 1.111;
+  letter-spacing: 1px;
   background-color: $primary;
 
   span::before {
@@ -223,11 +224,10 @@ footer {
 /* Home header */
 
 .page-header {
-  background-image: url('../img/capcelera.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  //(891px / 1336px)*100%;
+  //background-image: url('../img/Moble_A_Mida_Slide.jpg');
+  //background-position: top left;
+  //background-repeat: no-repeat;
+  //background-size: auto 90%;
   background-color: white;
   min-height: calc(100vh - 6rem);
   max-height: 999px;
@@ -238,12 +238,17 @@ footer {
   margin-top: 1rem;
   border: 1px solid red;
 
+  img {
+    height: calc(100vh - 9.5rem);
+    object-fit: cover;
+  }
+
   .row {
-    margin-top: 20%;
+    margin-top: -3.5rem;
 
     .title-tagline {
       text-align: left;
-      max-width: 600px;
+      max-width: 880px;
       display: block;
       z-index: 2;
     }
