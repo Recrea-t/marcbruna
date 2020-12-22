@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-primary bg-primary p-0 fixed-top">
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed-top">
 	<div class="container">
 
-		<span class="navbar-text text-dark p-0">
+		<span class="navbar-text p-0">
 			<a href="phone:{{ site.phone.number }}">
 				<i class="fa fa-phone"></i>
 			</a>
@@ -12,19 +12,19 @@
 
 		<ul class="navbar-nav flex-row ms-auto p-0 mb-lg-0">
 			<li class="nav-item ps-2 ps-lg-0">
-				<a class="nav-link py-0" rel="tooltip" title="{{ site.twitter.title }}"
+				<a class="nav-link" rel="tooltip" title="{{ site.twitter.title }}"
 					href="https://twitter.com/{{ site.twitter.username | escape }}" target="_blank">
 					<i class="fa fa-twitter"></i>
 				</a>
 			</li>
 			<li class="nav-item ps-2 ps-lg-0">
-				<a class="nav-link py-0" rel="tooltip" title="{{ site.facebook.title }}"
+				<a class="nav-link" rel="tooltip" title="{{ site.facebook.title }}"
 					href="https://www.facebook.com/{{ site.facebook.username | escape }}" target="_blank">
 					<i class="fa fa-facebook-square"></i>
 				</a>
 			</li>
 			<li class="nav-item ps-2 ps-lg-0">
-				<a class="nav-link py-0" rel="tooltip" title="{{ site.instagram.title }}"
+				<a class="nav-link" rel="tooltip" title="{{ site.instagram.title }}"
 					href="https://www.instagram.com/{{ site.instagram.username | escape }}" target="_blank">
 					<i class="fa fa-instagram"></i>
 				</a>
@@ -33,10 +33,10 @@
 	</div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-white bg-white static-top p-0" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg navbar-white bg-white static-top" aria-label="Main navigation">
 	<div class="container">
 		<div>
-			<a class="navbar-brand py-0" href="/" title="{{ site.title | escape }}">
+			<a class="navbar-brand" href="/" title="{{ site.title | escape }}">
 				<img src="/assets/img/Logo.svg" alt="" class="logo" />
 			</a>
 		</div>
@@ -57,10 +57,10 @@
 
 				<ul class="navbar-nav me-3 me-md-auto mb-0 fw-bold float-end">
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link py-0 text-sm-uppercase" rel="tooltip" href="/"><span class="active">Inici</span></a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="/"><span class="active">Inici</span></a>
 					</li>
 					<li class="nav-item dropdown ms-lg-5">
-						<a class="nav-link py-0 dropdown-toggle text-sm-uppercase" id="navbarDropdown" role="button"
+						<a class="nav-link dropdown-toggle text-sm-uppercase" id="navbarDropdown" role="button"
 							data-bs-toggle="dropdown" aria-expanded="false" rel="tooltip" href="#">Serveis</a>
 						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-lg-0" aria-labelledby="navbarDropdown">
 							{%- for servei in site.serveis -%}
@@ -70,10 +70,10 @@
 						</ul>
 					</li>
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link py-0 text-sm-uppercase" rel="tooltip" href="#clients">Clients</a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="#clients">Clients</a>
 					</li>
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link py-0 text-sm-uppercase" rel="tooltip" href="#contacte">Contacte</a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="#contacte">Contacte</a>
 					</li>
 				</ul>
 			</div>

@@ -6,71 +6,19 @@
 
 /* add additional CSS rules below */
 
-.text-primary, .text-primary:hover {
-  color: $dark !important;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif;
-
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-  padding-top: 2.5em;
+  padding-top: 2rem;
 }
 
-a {
-  color: $secondary;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: $secondary;
-  text-decoration: none;
-}
-
-a.btn {
-  border: 0;
-  font-size: .6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 0.75;
-
-  &:hover {
-    border: 0;
-    color: white;
-  }
-}
-
-.btn-primary {
-  color: $secondary;
-
-  &:hover {
-    background: $secondary;
-  }
-}
-
-.btn-secondary {
-  color: white;
-
-  &:hover {
-    background: $active-color;
-  }
-}
-
-@media (min-width: 1200px) {
-  a.btn {
-    font-size: .9rem;
-  }
-}
-
-h1, h2 {
-  color: black;
-  font-weight: 900;
+h1, h2, a.btn {
   text-transform: uppercase;
 }
 
 h1 {
   line-height: 1.111;
-  letter-spacing: 1px;
+  letter-spacing: 0.72px;
+  color: black;
   background-color: $primary;
 
   span::before {
@@ -80,49 +28,78 @@ h1 {
 }
 
 h2 {
-  line-height: 0.75;
   color: $secondary;
   float: left;
 }
+
+@include media-breakpoint-up(lg) {
+  h2 {
+    font-size: 2.781rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
   .sep {
     overflow: hidden;
-    padding-left: 1rem;
+    padding: 3.5rem 0 0 1rem;
 
     span {
       height: 1px;
       display: inline-block;
-      background: black;
+      background: $secondary;
       vertical-align: bottom;
       width: 100%;
     }
   }
-
-.text-sm {
-  font-size: 0.8rem !important;
 }
 
-@media (min-width: 1200px) {
-  .text-sm {
-    font-size: 1rem !important;
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.btn:hover {
+  color: $white;
+  background-color: $active-color;
+}
+
+@include media-breakpoint-down(md) {
+  a.btn {
+    font-size: .7rem;
   }
 }
 
 /* Navbars */
 
 .navbar.fixed-top, footer {
-  font-size: 0.7rem !important;
+  font-size: $font-size-sm
 }
 
-@media (min-width: 1200px) {
+@media screen and (max-width: 400px) {
   .navbar.fixed-top, footer {
-    font-size: 0.85rem !important;
+    font-size: .7rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar.fixed-top, footer {
+    font-size: 1rem;
   }
 }
 
 .navbar-toggler-bar {
   display: block;
   position: relative;
-  width: 24px;
+  width: 2rem;
   height: 3px;
   margin: 0 auto;
   background: $secondary;
@@ -143,37 +120,27 @@ span.active {
 }
 
 .logo {
-  height: 2.5rem;
+  height: 3.938rem;
+  margin-top: 1rem;
 }
 
 .dropdown-menu {
   text-align: right;
-  border: 0;
 
   .dropdown-item {
     font-weight: bold;
-    color: rgb(253, 253, 253);
   }
 }
 
-@media (min-width: 991.99px) {
+@include media-breakpoint-up(lg) {
   .dropdown-toggle.show {
     color: rgb(253, 253, 253);
     border-radius: .25rem .25rem 0 0;
     background-color: $secondary;
   }
-
-  .dropdown-menu-dark {
-    background-color: $secondary;
-    border-radius: .25rem 0 .25rem .25rem;
-
-    .dropdown-item:hover, .dropdown-item:focus {
-      background-color: $active-color;
-    }
-  }
 }
 
-@media (max-width: 991.98px) {
+@include media-breakpoint-down(lg) {
   .offcanvas-collapse {
     position: fixed;
     top: 1rem; /* Height of navbar */
@@ -197,9 +164,9 @@ span.active {
        background-position: right;
     }
 
-    a, a:hover, a:focus {
+    a, a:hover, a:focus, .dropdown-item {
       line-height: 2em;
-      color: rgb(253, 253, 253);
+      color: $white;
     }
 
     .text-sm-uppercase {
@@ -257,19 +224,7 @@ footer {
 
 /* Components */
 
-.servei.card {
-  border: 0;
-
-  img {
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-}
-
 .client.card {
-  border: 0;
   margin-top: 4.5rem;
   margin-right: 1.5rem;
   background: transparent;
@@ -284,7 +239,8 @@ footer {
   }
 }
 
-@media (max-width: 991.98px) {
+//@media (max-width: 992) {
+@include media-breakpoint-down(lg) {
   .scrollable {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -302,7 +258,21 @@ footer {
 }
 
 .client-logo {
-  height: 2.5rem;
+  height: 3.81rem;
+  margin-right: 2.813rem;
+}
+
+@include media-breakpoint-down(lg) {
+  .client-logo {
+    margin-right: 3.375rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .client-logo {
+    height: 2.8rem;
+    margin-right: 2.2rem;
+  }
 }
 
 .configurador {
@@ -324,7 +294,7 @@ img.thumbnail {
     opacity: 0.75;
   }
 
-  @media (min-width: 991.98px) {
+  @include media-breakpoint-up(lg) {
     height: 9vw;
   }
 }
