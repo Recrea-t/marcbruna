@@ -7,7 +7,7 @@
   folder: "exteriorfusta"
   description: >- # this means to ignore newlines until "baseurl:"
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.
-- name: "Portes d'entrada d'interior"
+- name: "Portes d'interior"
   folder: "interior"
   description: >- # this means to ignore newlines until "baseurl:"
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.

@@ -20,6 +20,7 @@ h1 {
   letter-spacing: 0.72px;
   color: black;
   background-color: $primary;
+  margin-bottom: 0;
 
   span::before {
     content: "\A";
@@ -40,13 +41,24 @@ h2 {
 
 @include media-breakpoint-down(sm) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2 {
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
 
 @include media-breakpoint-up(lg) {
   .sep {
@@ -119,9 +131,10 @@ span.active {
   height: .8em;
 }
 
-.logo {
-  height: 3.938rem;
-  margin-top: 1rem;
+@media screen and (max-width: 400px) {
+  .div-navbar-brand {
+    max-width: 300px;
+  }
 }
 
 .dropdown-menu {
@@ -191,34 +204,37 @@ footer {
 /* Home header */
 
 .page-header {
-  //background-image: url('../img/Moble_A_Mida_Slide.jpg');
-  //background-position: top left;
-  //background-repeat: no-repeat;
-  //background-size: auto 90%;
-  background-color: white;
-  min-height: calc(100vh - 6rem);
+  background-color: transparent;
+  min-height: calc(100vh - 8rem);
   max-height: 999px;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 1;
   margin-top: 1rem;
-  border: 1px solid red;
 
   img {
-    height: calc(100vh - 9.5rem);
+    height: calc(100vh - 8rem);
     object-fit: cover;
   }
 
   .row {
-    margin-top: -3.5rem;
+    position: absolute;
+    bottom: 0;
 
     .title-tagline {
       text-align: left;
-      max-width: 880px;
+      //max-width: 880px;
       display: block;
       z-index: 2;
     }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .page-header img {
+    height: calc(100vh - 12rem);
+    object-fit: cover;
   }
 }
 

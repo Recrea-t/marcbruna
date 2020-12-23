@@ -12,31 +12,29 @@ title: Portes
 
 <p class="text-sm">{{ porta.description }}</p>
 
-<div class="row row-cols-3 my-3 g-0">
+<div class="row row-cols-2 my-3 g-0">
 	{% if porta.cataleg %}
-	<div class="col-8">
+	<div class="col-6 col-sm-8">
 		<img class="img-fluid" src="/assets/img/portes/2500hires-tueren-290-1.jpg" alt="" />
 	</div>
 
-	<div class="col bg-primary p-3 d-flex flex-column">
-		<div class="configurador h-100 m-3"
+	<div class="col-6 col-sm-4 bg-primary p-3 d-flex flex-column">
+		<div class="configurador h-100 m-3 d-none d-sm-block"
 			style="background-image: url('/assets/img/portes/finstral-haustuerkonfigurator-de.png');">
 		</div>
-		<div class="text-center">
-			<a href="#" class="btn btn-secondary mt-auto">Configurador</a>
-		</div>
+		<a href="#" class="w-100 btn btn-secondary mt-auto">Configurador</a>
 	</div>
 	{% else %}
 	{% for image in image_files %}
 	{% if image.path contains porta.folder %}
 	{% if image.path contains '01' %}
-	<div class="col-8">
+	<div class="col-6 col-sm-8">
 		<img id="{{ porta.folder }}Id" class="expanded img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
 	</div>
 	{% endif %}
 	{% endif %}
 	{% endfor %}
-	<div class="col px-3">
+	<div class="col-6 col-sm-4 px-3">
 		<div class="row row-cols-2 g-3">
 			{% for image in image_files %}
 			{% if image.path contains porta.folder %}
