@@ -11,7 +11,8 @@
 	})
 
 	$('.thumbnail').on('click', function () {
-		document.getElementById(this.dataset.expanded).src = this.src;
+		var urlString = 'url(' + this.src + ')';
+		document.getElementById(this.dataset.expanded).style.backgroundImage = urlString;
 		return false;
 	});
 })()

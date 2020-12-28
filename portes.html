@@ -28,8 +28,7 @@ title: Portes
 	{% for image in image_files %}
 	{% if image.path contains porta.folder %}
 	{% if image.path contains '01' %}
-	<div class="col-6 col-sm-8">
-		<img id="{{ porta.folder }}Id" class="expanded img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+	<div id="{{ porta.folder }}Id" class="col-6 col-sm-8 expanded" style="background-image: url('{{ image.path }}');">
 	</div>
 	{% endif %}
 	{% endif %}
@@ -39,7 +38,7 @@ title: Portes
 			{% for image in image_files %}
 			{% if image.path contains porta.folder %}
 			<div class="col">
-				<img class="thumbnail img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image"
+				<img class="thumbnail" src="{{ site.baseurl }}{{ image.path }}" alt="image"
 					data-expanded="{{ porta.folder }}Id" />
 			</div>
 			{% endif %}

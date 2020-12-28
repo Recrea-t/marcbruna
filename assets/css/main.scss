@@ -297,12 +297,15 @@ footer {
   background-size: contain;
 }
 
-img.expanded {
-  object-fit: cover;
+.expanded {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 img.thumbnail {
   height: 18vw;
+  width: 100%;
   object-fit: cover;
   cursor: pointer;
 
