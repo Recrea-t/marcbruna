@@ -8,9 +8,11 @@ logo: "/assets/img/Logo.svg"
 
 email: "info@marcbruna.cat"
 phone:
-  number: 34600000000
-  title: "(+34) 600 000 000"
-address: "Street XXX, 08080 City"
+  number: 34625453140
+  title: "(+34) 625 453 140"
+address: >-
+ POLÍGON INDUSTRIAL ELS SALACONS<br/>
+ 7A-8A, 25560 SORT"
 
 social:
   name: Ben Balter
@@ -41,6 +43,7 @@ facebook:
   title: "Follow us on Facebook"
 gmaps:
   id: 1234
+  url: "https://g.page/marc-bruna-fuster"
 
 defaults:
   - scope:
