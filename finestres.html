@@ -1,34 +1,36 @@
 ---
 layout: default
-title: Portes
+title: Finestres
 ---
 {% assign image_files = site.static_files | where: "image", true %}
 
-{%- for porta in site.data.portes -%}
+{%- for finestra in site.data.finestres -%}
 <div style="overflow: hidden;">
-	<h2>{{ porta.name }}</h2>
+	<h2>{{ finestra.name }}</h2>
 	<div class="sep"><span></span></div>
 </div>
 
-<p class="text-sm">{{ porta.description }}</p>
+<p class="text-sm">{{ finestra.description }}</p>
 
 <div class="row row-cols-2 my-3 g-0">
-	{% if porta.cataleg %}
+	{% if finestra.cataleg %}
 	<div class="col-6 col-sm-8">
-		<img class="img-fluid" src="/assets/img/portes/2500hires-tueren-290-1.jpg" alt="" />
+		<img class="img-fluid" src="/assets/img/finestres/finstral-fenster-ok.jpg" alt="" />
 	</div>
 
 	<div class="col-6 col-sm-4 bg-primary p-3 d-flex flex-column">
 		<div class="configurador h-100 m-3 d-none d-sm-block"
-			style="background-image: url('/assets/img/portes/finstral-haustuerkonfigurator-de.png');">
+			style="background-image: url('/assets/img/finestres/finstral-vielfalt-aussen.png');">
 		</div>
-		<a href="{{ porta.configurador }}" class="w-100 btn btn-secondary mt-auto" target="_blank">Configurador</a>
+		{% if finestra.configurador %}
+		<a href="{{ finestra.configurador }}" class="w-100 btn btn-secondary mt-auto" target="_blank">Configurador</a>
+		{% endif %}
 	</div>
 	{% else %}
 	{% for image in image_files %}
-	{% if image.path contains porta.folder %}
+	{% if image.path contains finestra.folder %}
 	{% if image.path contains '01' %}
-	<div id="{{ porta.folder }}Id" class="col-6 col-sm-8 expanded" style="background-image: url('{{ image.path }}');">
+	<div id="{{ finestra.folder }}Id" class="col-6 col-sm-8 expanded" style="background-image: url('{{ image.path }}');">
 	</div>
 	{% endif %}
 	{% endif %}
@@ -36,10 +38,10 @@ title: Portes
 	<div class="col-6 col-sm-4 px-3">
 		<div class="row row-cols-2 g-3">
 			{% for image in image_files %}
-			{% if image.path contains porta.folder %}
+			{% if image.path contains finestra.folder %}
 			<div class="col">
 				<img class="thumbnail" src="{{ site.baseurl }}{{ image.path }}" alt="image"
-					data-expanded="{{ porta.folder }}Id" />
+					data-expanded="{{ finestra.folder }}Id" />
 			</div>
 			{% endif %}
 			{% endfor %}
@@ -50,8 +52,8 @@ title: Portes
 
 <div class="">
 	<a href="/#contacte" class="btn btn-secondary mt-auto">Demana Pressupost</a>
-	{% if porta.cataleg %}
-	<a href="{{ porta.cataleg }}" class="btn btn-secondary mt-auto" target="_blank">Catàleg</a>
+	{% if finestra.cataleg %}
+	<a href="{{ finestra.cataleg }}" class="btn btn-secondary mt-auto" target="_blank">Catàleg</a>
 	{% endif %}
 </div>
 {% endfor -%}

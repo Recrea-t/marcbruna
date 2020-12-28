@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Portes
+title: Cuines
 ---
 {% assign image_files = site.static_files | where: "image", true %}
 
-{%- for porta in site.data.portes -%}
+{%- for cuina in site.data.cuines -%}
 <div style="overflow: hidden;">
-	<h2>{{ porta.name }}</h2>
+	<h2>{{ cuina.name }}</h2>
 	<div class="sep"><span></span></div>
 </div>
 
-<p class="text-sm">{{ porta.description }}</p>
+<p class="text-sm">{{ cuina.description }}</p>
 
 <div class="row row-cols-2 my-3 g-0">
-	{% if porta.cataleg %}
+	{% if cuina.cataleg %}
 	<div class="col-6 col-sm-8">
 		<img class="img-fluid" src="/assets/img/portes/2500hires-tueren-290-1.jpg" alt="" />
 	</div>
@@ -22,13 +22,13 @@ title: Portes
 		<div class="configurador h-100 m-3 d-none d-sm-block"
 			style="background-image: url('/assets/img/portes/finstral-haustuerkonfigurator-de.png');">
 		</div>
-		<a href="{{ porta.configurador }}" class="w-100 btn btn-secondary mt-auto" target="_blank">Configurador</a>
+		<a href="{{ cuina.configurador }}" class="w-100 btn btn-secondary mt-auto" target="_blank">Configurador</a>
 	</div>
 	{% else %}
 	{% for image in image_files %}
-	{% if image.path contains porta.folder %}
+	{% if image.path contains cuina.folder %}
 	{% if image.path contains '01' %}
-	<div id="{{ porta.folder }}Id" class="col-6 col-sm-8 expanded" style="background-image: url('{{ image.path }}');">
+	<div id="{{ cuina.folder }}Id" class="col-6 col-sm-8 expanded" style="background-image: url('{{ image.path }}');">
 	</div>
 	{% endif %}
 	{% endif %}
@@ -36,10 +36,10 @@ title: Portes
 	<div class="col-6 col-sm-4 px-3">
 		<div class="row row-cols-2 g-3">
 			{% for image in image_files %}
-			{% if image.path contains porta.folder %}
+			{% if image.path contains cuina.folder %}
 			<div class="col">
 				<img class="thumbnail" src="{{ site.baseurl }}{{ image.path }}" alt="image"
-					data-expanded="{{ porta.folder }}Id" />
+					data-expanded="{{ cuina.folder }}Id" />
 			</div>
 			{% endif %}
 			{% endfor %}
@@ -50,8 +50,8 @@ title: Portes
 
 <div class="">
 	<a href="/#contacte" class="btn btn-secondary mt-auto">Demana Pressupost</a>
-	{% if porta.cataleg %}
-	<a href="{{ porta.cataleg }}" class="btn btn-secondary mt-auto" target="_blank">Catàleg</a>
+	{% if cuina.cataleg %}
+	<a href="{{ cuina.cataleg }}" class="btn btn-secondary mt-auto" target="_blank">Catàleg</a>
 	{% endif %}
 </div>
 {% endfor -%}

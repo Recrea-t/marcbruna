@@ -1,14 +1,13 @@
 - name: "Portes d'entrada d'alumini i PVC"
-  cataleg: "..."
-  configurador: "..."
+  cataleg: "https://www.finstral.com/es/information/catálogos-y-folletos/38-0.html"
+  configurador: "https://www.doorconfigurator.finstral.com/?lang=ES&_gl=1*156f0yo*_gcl_aw*R0NMLjE2MDM2NTE1MjcuRUFJYUlRb2JDaE1JNEotcXJvRDE2d0lWUkJrR0FCM3pCZ1RzRUFBWUFTQUFFZ0pBTFBEX0J3RQ"
   description: >- # this means to ignore newlines until "baseurl:"
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.
+    Oferim una àmplia varietat de dissenys de portes d’entrada de la marca <a href="https://www.finstral.com/es/puertas-de-entrada/15-0.html" target="_blank">FINSTRAL</a> amb acabats d’alumini, PVC, vidre i ceràmica. Per més informació, consulta el catàleg. A més, amb el configurador de portes de FINSTRAL pots crear la porta que desitges.
 - name: "Portes d'entrada de fusta"
   folder: "exteriorfusta"
   description: >- # this means to ignore newlines until "baseurl:"
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.
+    Pots escollir diferents tipus de fustes, dissenys i acabats per definir la porta ideal per accedir a casa teva, amb la bellesa i calidesa que ofereix la fusta massissa.
 - name: "Portes d'interior"
   folder: "interior"
   description: >- # this means to ignore newlines until "baseurl:"
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.
-
+    Oferim des de les portes lacades amb dissenys més atrevits fins a les clàssiques portes de plafons, passant per tot tipus de xapes de fusta i acabats. Segur que junts trobem la porta que més encaixa amb la decoració de casa teva.

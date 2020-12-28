@@ -1,0 +1,4 @@
+- name: "Cuines"
+  folder: "cuines"
+  description: >- # this means to ignore newlines until "baseurl:"
+    Grans, petites, amb illa, amb mobles alts, amb península... T'ajudem a crear la teva cuina a mida. T'assessorem en l'etapa de disseny i t'oferim materials d'alta qualitat perquè puguis gaudir de la cuina dels teus somnis.
