@@ -59,6 +59,9 @@ h2 {
   }
 }
 
+p a {
+  font-weight: bold;
+}
 
 @include media-breakpoint-up(lg) {
   .sep {
@@ -149,7 +152,7 @@ span.active {
   .dropdown-toggle.show {
     color: rgb(253, 253, 253);
     border-radius: .25rem .25rem 0 0;
-    background-color: $secondary;
+    background-color: $active-color;
   }
 }
 
@@ -213,9 +216,19 @@ footer {
   z-index: 1;
   margin-top: 1rem;
 
-  img {
+  .page-header-image {
     height: calc(100vh - 8rem);
-    object-fit: cover;
+    width: 100%;
+	  background-image: url("../img/Moble_A_Mida_Slide.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .page-header-image {
+      height: calc(100vh - 12rem);
+    }
   }
 
   .row {
@@ -228,13 +241,6 @@ footer {
       display: block;
       z-index: 2;
     }
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  .page-header img {
-    height: calc(100vh - 12rem);
-    object-fit: cover;
   }
 }
 

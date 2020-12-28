@@ -12,21 +12,21 @@
 
 		<ul class="navbar-nav flex-row ms-auto p-0 mb-lg-0">
 			<li class="nav-item ps-2 ps-lg-0">
-				<a class="nav-link" rel="tooltip" title="{{ site.twitter.title }}"
-					href="https://twitter.com/{{ site.twitter.username | escape }}" target="_blank">
-					<i class="fa fa-twitter"></i>
+				<a class="nav-link" rel="tooltip" title="{{ site.instagram.title }}"
+					href="https://www.instagram.com/{{ site.instagram.username | escape }}" target="_blank">
+					<i class="fa fa-instagram"></i>
 				</a>
 			</li>
 			<li class="nav-item ps-2 ps-lg-0">
 				<a class="nav-link" rel="tooltip" title="{{ site.facebook.title }}"
 					href="https://www.facebook.com/{{ site.facebook.username | escape }}" target="_blank">
-					<i class="fa fa-facebook-square"></i>
+					<i class="fa fa-facebook-f"></i>
 				</a>
 			</li>
 			<li class="nav-item ps-2 ps-lg-0">
-				<a class="nav-link" rel="tooltip" title="{{ site.instagram.title }}"
-					href="https://www.instagram.com/{{ site.instagram.username | escape }}" target="_blank">
-					<i class="fa fa-instagram"></i>
+				<a class="nav-link" rel="tooltip" title="{{ site.pinterest.title }}"
+					href="https://www.pinterest.com/{{ site.pinterest.username | escape }}" target="_blank">
+					<i class="fa fa-pinterest-p"></i>
 				</a>
 			</li>
 		</ul>
@@ -57,11 +57,23 @@
 
 				<ul class="navbar-nav me-3 me-md-auto mb-0 fw-bold float-end">
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link text-sm-uppercase" rel="tooltip" href="/"><span class="active">Inici</span></a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="/">
+							{% if page.url == "/" %}
+							<span class="active">Inici</span>
+							{% else %}
+							Inici
+							{% endif %}
+						</a>
 					</li>
 					<li class="nav-item dropdown ms-lg-5">
 						<a class="nav-link dropdown-toggle text-sm-uppercase" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false" rel="tooltip" href="#">Serveis</a>
+							data-bs-toggle="dropdown" aria-expanded="false" rel="tooltip" href="#">
+							{% if page.url == "/" %}
+							Serveis
+							{% else %}
+							<span class="active">Serveis</span>
+							{% endif %}
+						</a>
 						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-lg-0" aria-labelledby="navbarDropdown">
 							{%- for servei in site.serveis -%}
 							<li><a class="dropdown-item"
@@ -70,10 +82,10 @@
 						</ul>
 					</li>
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link text-sm-uppercase" rel="tooltip" href="#clients">Clients</a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="/#clients">Clients</a>
 					</li>
 					<li class="nav-item ms-lg-5">
-						<a class="nav-link text-sm-uppercase" rel="tooltip" href="#contacte">Contacte</a>
+						<a class="nav-link text-sm-uppercase" rel="tooltip" href="/#contacte">Contacte</a>
 					</li>
 				</ul>
 			</div>

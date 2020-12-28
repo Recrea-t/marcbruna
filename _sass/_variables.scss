@@ -58,8 +58,13 @@ $navbar-padding-x: 0;
 $dropdown-border-width: 0;
 $dropdown-border-radius: .25rem 0 .25rem .25rem;
 $dropdown-link-color: $white;
-$dropdown-link-hover-color: $white;
-$dropdown-link-hover-bg: $active-color;
+
+$dropdown-dark-color: $white;
+$dropdown-dark-bg: $active-color;
+$dropdown-dark-link-active-color: $white;
+$dropdown-dark-link-active-bg: $active-color;
+$dropdown-dark-link-hover-color: $white;
+$dropdown-dark-link-hover-bg: $dark;
 
 $card-border-width: 0;
 
