@@ -5,3 +5,6 @@ _site/
 node_modules
 Gemfile.lock
 .swp
+
+# Local Netlify folder
+.netlify
