@@ -11,8 +11,7 @@ sections:
   match: "*.md"
   new_doc_ext: md
   templates:
-  - page
-  - blocks-page
+  - portes
 - type: document
   path: src/theme.js
   label: Site Config
