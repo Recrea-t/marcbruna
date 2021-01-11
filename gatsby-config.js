@@ -28,6 +28,9 @@ module.exports = {
 				theme_color: `#fff`,
 				display: `minimal-ui`,
 				icon: "static/images/icon.png",
+				icon_options: {
+					purpose: `any maskable`,
+				},
 			},
 		},
 		// The offline plugin must be listed after the manifest plugin
