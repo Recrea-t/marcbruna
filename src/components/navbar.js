@@ -38,11 +38,9 @@ const MenuLink = (props) => {
 
 	if (link !== 'dropdown') {
 		return (
-			//<Nav.Link
-			//href={link}
-			//className="ms-lg-5 p-lg-0"><span>{name}</span></Nav.Link>
 			<AnchorLink
 				to={link}
+				activeClassName="active"
 				className="nav-link ms-lg-5 p-lg-0"
 				title={name}
 				onAnchorLinkClick={props.onClick}
@@ -52,6 +50,7 @@ const MenuLink = (props) => {
 		);
 	}
 
+	const isActive = props.pathname !== '/' ? ' active' : ''
 	return (
 		<Dropdown
 			alignRight
@@ -60,7 +59,7 @@ const MenuLink = (props) => {
 				as="a"
 				role="button"
 				id="navbarDropdown"
-				className="nav-link"><span>{name}</span></Dropdown.Toggle>
+				className={`nav-link${isActive}`}><span>{name}</span></Dropdown.Toggle>
 
 			<Dropdown.Menu
 				as="ul"
@@ -131,8 +130,14 @@ const StaticNavbar = class extends React.Component {
 									aria-controls="basic-navbar-nav"
 									onClick={() => this.toggleHamburger()}
 								/>
-								<Nav lassName="me-lg-auto mb-0 fw-bold float-end" activeKey={this.props.pathname} id="basic-navbar-nav">
-									{this.props.menuLinks.map((link, index) => <MenuLink key={index} link={link} onClick={() => this.toggleHamburger()} />)}
+								<Nav className="me-lg-auto mb-0 fw-bold float-end" activeKey={this.props.pathname} id="basic-navbar-nav">
+									{this.props.menuLinks.map((link, index) =>
+										<MenuLink
+											key={index}
+											pathname={this.props.pathname}
+											link={link}
+											onClick={() => this.toggleHamburger()} />
+									)}
 								</Nav>
 							</Container>
 						</div>

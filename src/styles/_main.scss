@@ -140,7 +140,8 @@ h2 {
   }
 }
 
-.nav-link.active span {
+.nav-link.active span,
+[aria-current] span {
   border-bottom: 1px solid $secondary;
 }
 
