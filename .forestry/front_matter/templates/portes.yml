@@ -78,3 +78,5 @@ fields:
   label: Productes
   config:
     min: 1
+pages:
+- src/pages/portes.md
