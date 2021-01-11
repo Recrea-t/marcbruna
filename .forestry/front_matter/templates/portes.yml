@@ -79,4 +79,5 @@ fields:
   config:
     min: 1
 pages:
+- src/pages/finestres.md
 - src/pages/portes.md
