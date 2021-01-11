@@ -19,39 +19,62 @@ fields:
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom
+    config:
+      required: true
   - type: file
     name: image
-    label: image
+    label: Imatge
   - type: text
     name: catalog
-    label: catalog
+    label: Catàleg de Finstral
+    config:
+      required: true
   - type: field_group
     name: configurator
-    label: configurator
+    label: Configurador
     fields:
     - type: text
       name: name
-      label: name
+      label: Text botó
+      config:
+        required: true
+      default: Configurador
     - type: file
       name: image
-      label: image
+      label: Imatge
     - type: text
       name: url
-      label: url
+      label: Enllaç al configurador
+      config:
+        required: true
   - type: textarea
     name: text
-    label: text
+    label: Descripció
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+      required: true
 - type: field_group_list
   name: products
-  label: products
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom
+    config:
+      required: true
   - type: textarea
     name: text
-    label: text
+    label: Descripció
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
   - type: image_gallery
     name: images
     label: Imatges
+  label: Productes
+  config:
+    min: 1
