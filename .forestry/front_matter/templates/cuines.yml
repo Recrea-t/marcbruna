@@ -5,22 +5,32 @@ fields:
 - type: text
   name: templateKey
   label: templateKey
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Títol de la pàgina (SEO)
 - type: text
   name: description
-  label: description
+  label: Descripció de la pàgina (SEO)
 - type: field_group_list
   name: products
-  label: products
+  label: Productes
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom
+    config:
+      required: true
   - type: textarea
     name: text
-    label: text
+    label: Descripció
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+      required: true
   - type: image_gallery
     name: images
-    label: images
+    label: Imatges
+  config:
+    min: 1
