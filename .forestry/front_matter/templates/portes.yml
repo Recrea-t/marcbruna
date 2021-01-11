@@ -5,15 +5,17 @@ fields:
 - type: text
   name: templateKey
   label: templateKey
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Títol de la pàgina (SEO)
+  default: Portes
 - type: text
   name: description
-  label: description
+  label: Descripció de la pàgina (SEO)
 - type: field_group
   name: finstral
-  label: finstral
+  label: Secció Finstral
   fields:
   - type: text
     name: name
@@ -52,4 +54,4 @@ fields:
     label: text
   - type: image_gallery
     name: images
-    label: images
+    label: Imatges
