@@ -1,0 +1,55 @@
+---
+label: Portes
+hide_body: true
+fields:
+- type: text
+  name: templateKey
+  label: templateKey
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: field_group
+  name: finstral
+  label: finstral
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: catalog
+    label: catalog
+  - type: field_group
+    name: configurator
+    label: configurator
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: url
+      label: url
+  - type: textarea
+    name: text
+    label: text
+- type: field_group_list
+  name: products
+  label: products
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: textarea
+    name: text
+    label: text
+  - type: image_gallery
+    name: images
+    label: images
