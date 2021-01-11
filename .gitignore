@@ -1,10 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-node_modules
-Gemfile.lock
+node_modules/
+.cache/
+public/
+static/admin/*.bundle.*
 .swp
-
-# Local Netlify folder
-.netlify
