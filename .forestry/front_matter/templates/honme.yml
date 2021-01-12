@@ -24,6 +24,11 @@ fields:
   - type: file
     name: logo
     label: Logotip
+  - name: url
+    type: text
+    config:
+      required: true
+    label: Url
   - type: textarea
     name: text
     label: Text
