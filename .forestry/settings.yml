@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url: 
+webhook_url:
 sections:
 - type: directory
   path: src/pages
@@ -15,7 +15,7 @@ sections:
   - cuines
   - portes
 - type: document
-  path: src/theme.js
+  path: site-config.json
   label: Site Config
 upload_dir: static/images
 public_path: "/images"

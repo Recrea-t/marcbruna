@@ -1,9 +1,9 @@
-const theme = require('./src/theme');
+const config = require('./site-config.json')
 
-console.log(theme)
+console.log(config)
 
 module.exports = {
-	siteMetadata: theme,
+	siteMetadata: config,
 	plugins: [
 		"gatsby-plugin-sass",
 		"gatsby-plugin-fontawesome-css",
