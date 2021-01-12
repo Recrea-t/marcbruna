@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: src/pages
-  label: Pages
+  label: Serveis
   create: documents
   match: "*.md"
   exclude: index.md
@@ -16,7 +16,7 @@ sections:
   - portes
 - type: document
   path: site-config.json
-  label: Site Config
+  label: Site MetaData
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
