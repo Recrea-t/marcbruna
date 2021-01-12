@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Títol de la pàgina (SEO)
 - type: text
   name: titleTemplate
   label: titleTemplate
