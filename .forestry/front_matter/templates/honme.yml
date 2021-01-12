@@ -33,7 +33,7 @@ fields:
     name: text
     label: Text
     config:
-      required: true
+      required: false
       wysiwyg: false
   config:
     labelField: name
