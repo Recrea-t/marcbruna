@@ -37,3 +37,5 @@ fields:
       wysiwyg: false
   config:
     labelField: name
+pages:
+- src/pages/index.md
