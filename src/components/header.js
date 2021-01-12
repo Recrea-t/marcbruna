@@ -8,7 +8,7 @@ const Header = () => {
 			<Container>
 				<Row className="justify-content-start">
 					<Col className="title-tagline">
-						<h1 className="px-3 shadow-sm">El teu fuster<span>al Pallars Sobirà</span></h1>
+						<h1 className="px-3">El teu fuster<span>al Pallars Sobirà</span></h1>
 					</Col>
 				</Row>
 			</Container>
