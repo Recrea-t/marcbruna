@@ -246,17 +246,19 @@ footer {
   margin-top: 1rem;
 
   .page-header-image {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 8rem); //fallback
+    height: calc(var(--vh, 1vh) * 100 - 8rem);
     width: 100%;
-	  background-image: url("../images/heading2.jpg");
-    background-position: top;
+	  background-image: url("../images/heading1.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @include media-breakpoint-up(sm) {
     .page-header-image {
-      height: calc(100vh - 12rem);
+      height: calc(100vh - 12rem); //fallback
+      height: calc(var(--vh, 1vh) * 100 - 12rem);
     }
   }
 

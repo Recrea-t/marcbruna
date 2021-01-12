@@ -2,9 +2,10 @@ import "@fontsource/montserrat"
 import "@fontsource/montserrat/900.css"
 
 import React from "react"
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import PropTypes from 'prop-types'
-import { Container } from "react-bootstrap"
+import {Container} from "react-bootstrap"
+import useWindowSize from "../utils/useWindowSize";
 
 import Layout from "../components/layout"
 import Header from "../components/header"
@@ -13,52 +14,53 @@ import Products from "../components/products"
 import Testimonials from "../components/testimonials"
 import Contact from "../components/contact"
 
-export const IndexPageTemplate = ({ frontmatter }) => {
-    return (
-        <React.Fragment>
-            <Container>
-                <Heading heading="Serveis" id="serveis" />
-                <Products />
-            </Container>
+export const IndexPageTemplate = ({frontmatter}) => {
+	return (
+		<React.Fragment>
+			<Container>
+				<Heading heading="Serveis" id="serveis" />
+				<Products />
+			</Container>
 
-            <Container>
-                <Heading heading="Clients" id="clients" />
-            </Container>
+			<Container>
+				<Heading heading="Clients" id="clients" />
+			</Container>
 
-            <Container fluid className="scrollable bg-primary">
-                <Testimonials testimonials={frontmatter.testimonials} />
-            </Container>
+			<Container fluid className="scrollable bg-primary">
+				<Testimonials testimonials={frontmatter.testimonials} />
+			</Container>
 
-            <Container>
-                <Heading heading="Contacte" id="contacte" />
-            </Container>
+			<Container>
+				<Heading heading="Contacte" id="contacte" />
+			</Container>
 
-            <Container>
-                <Contact />
-            </Container>
-        </React.Fragment>
-    )
+			<Container>
+				<Contact />
+			</Container>
+		</React.Fragment>
+	)
 }
 
 IndexPageTemplate.propTypes = {}
 
-const IndexPage = ({ data }) => {
-    const { frontmatter } = data.markdownRemark
+const IndexPage = ({data}) => {
+	useWindowSize()
+	const {frontmatter} = data.markdownRemark
 
-    return (
-        <Layout title={frontmatter.title} description={frontmatter.description}>
-            <Header />
-            <IndexPageTemplate frontmatter={frontmatter} />
-        </Layout>
-    )
+	return (
+		<Layout title={frontmatter.title} description={frontmatter.description}>
+			<Header />
+			<IndexPageTemplate frontmatter={frontmatter} />
+		</Layout>
+	)
 }
 
 IndexPage.propTypes = {
-    data: PropTypes.shape({
-        markdownRemark: PropTypes.shape({
-            frontmatter: PropTypes.object,
-        }),
-    }),
+	data: PropTypes.shape({
+		markdownRemark: PropTypes.shape({
+			frontmatter: PropTypes.object,
+		}),
+	}),
 }
 
 export default IndexPage
