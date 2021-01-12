@@ -29,9 +29,7 @@
     {
       "name": "Inici",
       "link": "/",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     },
     {
       "name": "Serveis",
@@ -40,48 +38,44 @@
         {
           "name": "Portes",
           "link": "/portes",
-          "image": "Icones_serveis_Portes.svg"
+          "image": "portes.svg"
         },
         {
           "name": "Finestres",
           "link": "/finestres",
-          "image": "Icones_serveis_Finestres.svg"
+          "image": "finestres.svg"
         },
         {
           "name": "Cuines",
           "link": "/cuines",
-          "image": "Icones_serveis_Cuines.svg"
+          "image": "cuines.svg"
         },
         {
           "name": "Mobles a mida",
           "link": "/mobles-a-mida",
-          "image": "Icones_serveis_Moblesamida.svg"
+          "image": "mobles-a-mida.svg"
         },
         {
           "name": "Parquets",
           "link": "/parquets",
-          "image": "Icones_serveis_Parquets.svg"
+          "image": "parquets.svg"
         },
         {
           "name": "Fusteria en general",
           "link": "/fusteria-en-general",
-          "image": "Icones_serveis_Moblesamida.svg"
+          "image": "fusteria-en-general.svg"
         }
       ]
     },
     {
       "name": "Clients",
       "link": "/#clients",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     },
     {
       "name": "Contacte",
       "link": "/#contacte",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     }
   ]
 }

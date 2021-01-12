@@ -10,10 +10,10 @@ products:
       parquets massissos... Diferents materials per escollir i acabats a la carta.
       Consulta'ns, junts trobarem l'opció que més s'adapti a les teves necessitats.
     images:
-      - ../images/parquets/Parquet_01.jpg
-      - ../images/parquets/Parquet_02.jpg
-      - ../images/parquets/Parquet_03.jpg
-      - ../images/parquets/Parquet_04.jpg
-      - ../images/parquets/Parquet_05.jpg
-      - ../images/parquets/Parquet_06.jpg
+      - ../images/parquets/parquets/Parquet_01.jpg
+      - ../images/parquets/parquets/Parquet_02.jpg
+      - ../images/parquets/parquets/Parquet_03.jpg
+      - ../images/parquets/parquets/Parquet_04.jpg
+      - ../images/parquets/parquets/Parquet_05.jpg
+      - ../images/parquets/parquets/Parquet_06.jpg
 ---

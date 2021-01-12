@@ -2,8 +2,8 @@ import React from "react"
 import {Navbar, Nav, Col, Container, Dropdown} from "react-bootstrap"
 import '../utils/font-awesome';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import finstral from '../images/Logo_Finstral.svg'
-import logo from '../images/Logo.svg'
+import finstral from '../images/logo-finstral.svg'
+import logo from '../images/logo.svg'
 import {AnchorLink} from "gatsby-plugin-anchor-links";
 
 const FixedNavbar = ({organization, social}) => {

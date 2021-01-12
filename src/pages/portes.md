@@ -4,11 +4,11 @@ title: Portes
 description: ''
 finstral:
   name: Portes d'entrada d'alumini i PVC
-  image: "../images/portes/2500hires-tueren-290-1.jpg"
+  image: "../images/portes/portes-exterior-finstral.jpg"
   catalog: https://www.finstral.com/es/information/catálogos-y-folletos/38-0.html
   configurator:
     name: Configurador Portes
-    image: "../images/portes/finstral-haustuerkonfigurator-de.png"
+    image: "../images/portes/configurador-portes-finstral.png"
     url: https://www.doorconfigurator.finstral.com/?lang=ES
   text: 'Oferim una àmplia varietat de dissenys de portes d’entrada de la marca <a
     target="_blank" rel="noreferrer" title="Portes d''entrada de Finstral" href="https://www.finstral.com/es/puertas-de-entrada/15-0.html">
