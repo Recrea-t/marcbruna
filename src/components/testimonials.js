@@ -6,6 +6,10 @@ import Img from "gatsby-image/withIEPolyfill"
 const Testimonial = (props) => {
 	const {text} = props.testimonial
 
+	if (!text) {
+		return null
+	}
+
 	return (
 		<div className="client card">
 			<div className="card-body position-relative">
@@ -18,14 +22,28 @@ const Testimonial = (props) => {
 	)
 }
 
+const Logo = (props) => {
+	const {name, url, logo} = props.testimonial
+
+	if (!url) {
+		return <Img className="client-logo" fluid={logo.childImageSharp.fluid} alt={name} objectFit="contain" />
+	}
+
+	return (
+		<a className="client-logo" href={url} title={name} target="_blank" rel="noreferrer">
+			<Img fluid={logo.childImageSharp.fluid} alt={name} objectFit="contain" />
+		</a>
+	)
+}
+
 const Testimonials = ({testimonials}) => {
 	return (
 		<Container>
 			< div className="d-flex flex-row flex-nowrap justify-content-md-between" >
-				{testimonials.map((item, index) => <Testimonial key={index} index={index} testimonial={item} />)}
+				{testimonials.map((item, index) => <Testimonial key={index} testimonial={item} />)}
 			</div >
 			<div className="d-flex flex-nowrap justify-content-md-between py-5">
-				{testimonials.map((item, index) => <Img key={index} className="client-logo" fluid={item.logo.childImageSharp.fluid} alt={item.name} objectFit="contain" />)}
+				{testimonials.map((item, index) => <Logo key={index} testimonial={item} />)}
 			</div>
 		</Container >
 	)

@@ -10,10 +10,10 @@ testimonials:
 - name: L'Orri
   logo: "../images/logo-orri.png"
   text: ''
-  url: ''
+  url: 'https://www.orridelpallars.cat'
 - name: El Detallista
   logo: "../images/logo-detallista.png"
-  text: "\n"
+  text: ""
   url: ''
 
 ---
