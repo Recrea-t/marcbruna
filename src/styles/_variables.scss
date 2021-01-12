@@ -6,8 +6,8 @@ $active-color: #2a2a2a;
 
 $body-color: $dark;
 
-$link-color: $dark;
-$link-hover-color: $active-color;
+$link-color: $black;
+$link-hover-color: $dark;
 $link-decoration: none;
 
 $component-active-color: $white;
@@ -48,9 +48,9 @@ $btn-font-weight: $font-weight-bolder;
 $btn-link-hover-color: $white;
 $btn-font-size-sm: $input-btn-font-size-sm;
 
-$navbar-light-color: #010101;
+$navbar-light-color: $dark;
 $navbar-light-hover-color: $dark;
-$navbar-light-active-color: #010101;
+$navbar-light-active-color: $black;
 
 $nav-link-padding-y: 0;
 $nav-link-font-size: 1.125rem;

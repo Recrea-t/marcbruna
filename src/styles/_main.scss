@@ -53,14 +53,6 @@ h2 {
   }
 }
 
-.navbar-text, .navbar-text a {
-  color: $dark !important;
-}
-
-.navbar-text a:hover, p a:hover {
-  color: $active-color !important;
-}
-
 @include media-breakpoint-up(lg) {
   .sep {
     overflow: hidden;
@@ -107,6 +99,13 @@ h2 {
 }
 
 /* Navbars */
+a.nav-link, .navbar-text a {
+  color: $black !important;
+}
+
+.nav-link:hover, .navbar-text a:hover {
+  color: $dark !important;
+}
 
 @include media-breakpoint-down(md) {
   .navbar.fixed-top, footer {

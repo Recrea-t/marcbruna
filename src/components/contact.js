@@ -19,7 +19,7 @@ export const Contact = () => {
 				</p>
 				<p className="py-md-3">
 					<FontAwesomeIcon icon="phone" /><br />
-					<a href={`phone:${phone.number}`}>{phone.title}</a>
+					<a href={`tel:${phone.number}`}>{phone.title}</a>
 				</p>
 				<p className="py-md-3">
 					<FontAwesomeIcon icon="envelope" /><br />
