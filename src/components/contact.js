@@ -13,17 +13,20 @@ export const Contact = () => {
 
 	return (
 		<Row className="g-4">
-			<Col className="col-12 col-md-4 text-center">
+			<Col className="col-12 col-md-4 text-center text-contacte">
 				<p className="py-md-3">
-					<FontAwesomeIcon icon="map-marker" /><br />{address}
+					<FontAwesomeIcon icon="map-marker" /><br />
+					<span dangerouslySetInnerHTML={{__html: address}}></span>
 				</p>
 				<p className="py-md-3">
-					<FontAwesomeIcon icon="phone" /><br />
-					<a href={`tel:${phone.number}`}>{phone.title}</a>
+					<a href={`tel:${phone.number}`}>
+						<FontAwesomeIcon icon="phone" className="fa-flip-horizontal" /><br />{phone.title}
+					</a>
 				</p>
 				<p className="py-md-3">
-					<FontAwesomeIcon icon="envelope" /><br />
-					<a href={`mailto:${email}`}>{email}</a>
+					<a href={`mailto:${email}`}>
+						<FontAwesomeIcon icon="envelope" /><br />{email}
+					</a>
 				</p >
 			</Col >
 			<Col className="col-md-8">

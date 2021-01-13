@@ -12,7 +12,7 @@ const FixedNavbar = ({organization, social}) => {
 			<Container>
 				<Navbar.Text className="p-0">
 					<a href={`tel:${organization.phone.number}`} title="Truca'ns">
-						<FontAwesomeIcon icon="phone" className="me-1" />
+						<FontAwesomeIcon icon="phone" className="me-1 fa-flip-horizontal" />
 					</a>
 					<a href={`mailto:${organization.email}`} title="Escriu-nos">{organization.email}</a> | Distribuidor de <img src={finstral} alt="Finstral" className="logo-finstral" />
 				</Navbar.Text>
