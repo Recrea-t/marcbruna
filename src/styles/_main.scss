@@ -90,9 +90,11 @@ h2 {
   background-color: $active-color;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   a.btn {
-    font-size: .7rem;
+    font-size: .8rem;
+    padding: 1.1rem 0.5rem;
+    border-radius: 0.2rem;
   }
 }
 
