@@ -1,10 +1,14 @@
 import React from 'react'
+import Img from "gatsby-image/withIEPolyfill"
 import {Container, Row, Col} from "react-bootstrap"
 
-const Header = () => {
+const Header = ({description, image}) => {
 	return (
 		<div className="page-header">
-			<div className="page-header-image"></div>
+			<Img
+				fluid={image.childImageSharp.fluid}
+				alt={description}
+				className="page-header-image" />
 			<Container>
 				<Row className="justify-content-start">
 					<Col className="title-tagline">

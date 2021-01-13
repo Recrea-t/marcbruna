@@ -2,6 +2,7 @@
 templateKey: index-page
 title: Inici
 description: El teu fuster al Pallars Sobirà
+image: ../images/heading1.jpg
 testimonials:
 - name: Bar Bodega La Tona
   logo: "../images/logo-LaTona.png"

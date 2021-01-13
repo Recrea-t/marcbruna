@@ -256,10 +256,9 @@ footer {
     height: calc(100vh - 8rem); //fallback
     height: calc(var(--vh, 1vh) * 100 - 8rem);
     width: 100%;
-	  background-image: url("../images/heading1.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
   }
 
   @include media-breakpoint-up(sm) {

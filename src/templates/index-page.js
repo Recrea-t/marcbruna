@@ -50,7 +50,7 @@ const IndexPage = ({data}) => {
 
 	return (
 		<Layout title={frontmatter.title} description={frontmatter.description}>
-			<Header />
+			<Header description={frontmatter.description} image={frontmatter.image} />
 			<IndexPageTemplate frontmatter={frontmatter} />
 		</Layout>
 	)
@@ -72,6 +72,13 @@ export const query = graphql`
 			frontmatter {
 				title
         description
+				image {
+					childImageSharp {
+						fluid {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
 				testimonials {
 					name
 					text

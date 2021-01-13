@@ -32,7 +32,7 @@ const Product = (props) => {
 		<div className="servei">
 			<img src={publicURL} alt={name} />
 			<div className="d-flex flex-column">
-				<Link to={link} className="w-100 btn btn-primary mt-auto">{name}</Link>
+				<Link to={link} className="w-100 btn btn-primary mt-auto" title={name}>{name}</Link>
 			</div>
 		</div>
 	)
