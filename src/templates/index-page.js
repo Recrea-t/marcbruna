@@ -44,7 +44,8 @@ export const IndexPageTemplate = ({frontmatter}) => {
 IndexPageTemplate.propTypes = {}
 
 const IndexPage = ({data}) => {
-	useWindowSize()
+	const {width, height} = useWindowSize()
+
 	const {frontmatter} = data.markdownRemark
 
 	return (
