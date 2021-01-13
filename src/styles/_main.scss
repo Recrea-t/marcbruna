@@ -211,7 +211,8 @@ a.nav-link, .navbar-text a {
       border-bottom: 0.3em solid transparent;
     }
 
-    .nav-link, .nav-link:hover, .nav-link:focus, .dropdown-item {
+    .nav-link, .nav-link:hover, .nav-link:focus,
+    .nav-link:active, .dropdown-item {
       line-height: 2em;
       color: $white !important;
     }
