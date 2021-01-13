@@ -326,38 +326,46 @@ footer {
   }
 }
 
-.client.card {
-  margin-top: 4.5rem;
-  margin-right: 1.5rem;
-  background: transparent;
 
-  .card-body {
-    background-color: white;
+.scrollable {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 
-    .profile {
-      height: 5rem;
-      width: 5rem;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
-.client-logo {
-  min-width: 15%;
-  margin-right: 2.813rem;
+.testimonials > div {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &.justify-content-space-evenly {
+      justify-content: space-evenly;
+  }
+
+  .client.card {
+    margin-top: 4.5rem;
+    margin-right: 1.5rem;
+    background: transparent;
+
+    .card-body {
+      background-color: white;
+
+      .profile {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+  }
+
+  .client-logo {
+    min-width: 15%;
+  }
 }
 
-//@media (max-width: 992) {
 @include media-breakpoint-down(lg) {
-  .scrollable {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
   .client.card {
     min-width: 45%;
     min-height: 45%;
@@ -365,13 +373,6 @@ footer {
 
   .client-logo {
     min-width: 25%;
-    margin-right: 3.375rem;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .client-logo {
-    margin-right: 2.2rem;
   }
 }
 

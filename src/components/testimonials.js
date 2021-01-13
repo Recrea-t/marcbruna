@@ -38,11 +38,11 @@ const Logo = (props) => {
 
 const Testimonials = ({testimonials}) => {
 	return (
-		<Container>
-			< div className="d-flex flex-row flex-nowrap justify-content-md-between" >
+		<Container className="testimonials scrollable">
+			<div>
 				{testimonials.map((item, index) => <Testimonial key={index} testimonial={item} />)}
 			</div >
-			<div className="d-flex flex-nowrap justify-content-md-between py-5">
+			<div className="py-5 justify-content-space-evenly">
 				{testimonials.map((item, index) => <Logo key={index} testimonial={item} />)}
 			</div>
 		</Container >
