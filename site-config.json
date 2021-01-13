@@ -3,7 +3,7 @@
 	"titleTemplate": "%s · Marc Bruna Fuster",
 	"description": "El teu fuster al Pallars Sobirà",
 	"siteUrl": "https://marcbrunafuster.cat",
-	"image": "/images/logo.png",
+	"image": "/images/logo.svg",
 	"color": "#fff",
 	"author": {
 		"name": "Recrea't"

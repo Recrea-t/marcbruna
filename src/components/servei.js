@@ -33,7 +33,9 @@ const Servei = class extends React.Component {
                     <div className="col-6 col-sm-4 px-3">
                         <div className="thumbnails">
                             {images.map((item, index) =>
-                                <div key={index} onClick={() => this.setState({ selected: index })} onKeyDown={() => this.setState({ selected: index })} role="button" tabIndex="0">
+                                <div key={index} role="button" tabIndex="0"
+                                    onClick={() => this.setState({ selected: index })}
+                                    onKeyDown={() => this.setState({ selected: index })} >
                                     <Img className="thumbnail" fluid={item.childImageSharp.fluid} alt="Imatge galeria" />
                                 </div>
                             )}
