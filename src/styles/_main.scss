@@ -438,3 +438,18 @@ footer {
     }
   }
 }
+
+/* CookieConsent */
+@include media-breakpoint-up(sm) {
+  .cookie-consent {
+    margin-bottom: 1.5rem;
+    color: $dark;
+
+    > div {
+      align-self: flex-end;
+    }
+    .alert-link:hover {
+      text-decoration: underline;
+    }
+  }
+}

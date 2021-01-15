@@ -32,22 +32,20 @@ const TemplateWrapper = ({
 			{children}
 			<Footer title={defaultTitle} author={author} />
 			<CookieConsent
-				debug={true}
 				location="bottom"
 				buttonText="Acceptar"
 				enableDeclineButton
-				declineButtonText="Rebutjar"
+				declineButtonText=""
 				cookieName="gatsby-gdpr-google-analytics"
-				containerClasses="bg-secondary text-sm"
-				buttonWrapperClasses=""
+				disableStyles={true}
+				containerClasses="cookie-consent fixed-bottom alert alert-dark alert-dismissible fade show text-sm d-flex flex-row justify-content-between"
+				buttonWrapperClasses="buttons"
 				buttonClasses="btn btn-sm btn-primary"
-				declineButtonClasses="btn btn-sm btn-primary"
+				declineButtonClasses="btn-close"
 				expires={150}>
 				<p>
-					Utilitzem galetes per distingir-vos d'altres usuaris en els nostres webs,
-					per millorar la informació i els serveis que us oferim, i per facilitar-vos l'accés.
-					Si no les accepteu, algunes parts del web poden deixar de funcionar.
-					Per a més informació, consulteu la <a href="/politica-de-privacitat" target="_blank" title="Política de privacitat" className="alert-link"> política de privacitat</a>.
+					Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
+					Per a més informació, consulteu la <a href="/politica-de-privacitat" target="_blank" title="Política de cookies" className="alert-link"> política de galetes</a>.
 				</p>
 			</CookieConsent>
 		</React.Fragment>

@@ -9,9 +9,11 @@ module.exports = {
 		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-anchor-links",
 		{
-			resolve: "gatsby-plugin-google-analytics",
+			resolve: `gatsby-plugin-google-gtag`,
 			options: {
-				trackingId: "G-9PZC5GDJLK",
+				trackingIds: [
+					"G-9PZC5GDJLK",
+				],
 			},
 		},
 		{
