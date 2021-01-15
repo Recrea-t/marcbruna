@@ -31,7 +31,14 @@ export const Contact = () => {
 			</Col >
 			<Col className="col-md-8">
 				<div id="map-container-google" className="map-container w-100 h-100">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.0012556821384!2d1.1288096146198052!3d42.40641827918378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a605e0c8cda76f%3A0x3ffaf0fef97f3ad0!2sMarc%20Bruna%2C%20Fuster!5e0!3m2!1sen!2ses!4v1608391599370!5m2!1sen!2ses" style={{width: "100%", height: "100%", border: 0}} frameBorder="0" title="Google Map" allowFullScreen></iframe>
+					<iframe
+						title="Google Map - Marc Bruna Fuster"
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBMmbhjFy6S1eQe5oQWG8pYoZPLy3nHACs&language=ca&q=marc+bruna+fuster"
+						style={{width: "100%", height: "100%", border: 0}}
+						frameBorder="0"
+						aria-hidden="false"
+						tabIndex="0"
+						allowFullScreen />
 				</div>
 			</Col>
 		</Row >
