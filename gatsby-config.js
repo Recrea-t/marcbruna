@@ -12,15 +12,18 @@ module.exports = {
 			resolve: `gatsby-plugin-google-gtag`,
 			options: {
 				trackingIds: [
-					"G-9PZC5GDJLK",
+					"GTM-N54NL4G",
 				],
+				pluginConfig: {
+					head: true
+				},
 			},
 		},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
 				googleTagManager: {
-					trackingId: 'G-9PZC5GDJLK',
+					trackingId: 'GTM-N54NL4G',
 					cookieName: 'gatsby-gdpr-google-tagmanager',
 				},
 			},
