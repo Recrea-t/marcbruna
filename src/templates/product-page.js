@@ -78,6 +78,7 @@ export const query = graphql`
 						childImageSharp {
 							fluid {
 								...GatsbyImageSharpFluid
+								...GatsbyImageSharpFluidLimitPresentationSize
 							}
 						}
 					}

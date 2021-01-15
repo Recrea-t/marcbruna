@@ -3,7 +3,7 @@ import "@fontsource/montserrat/900.css"
 
 import React from "react"
 import {Container} from "react-bootstrap"
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image"
 
 import Heading from "../components/heading"
 

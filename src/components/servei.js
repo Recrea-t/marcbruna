@@ -1,59 +1,28 @@
-import "@fontsource/montserrat"
-import "@fontsource/montserrat/900.css"
-
 import React from "react"
-import {Container} from "react-bootstrap"
-import Img from "gatsby-image/withIEPolyfill"
-import {AnchorLink} from "gatsby-plugin-anchor-links";
+import { Container } from "react-bootstrap"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import Heading from "../components/heading"
+import Gallery from "../components/gallery"
 
-const Servei = class extends React.Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			selected: 0,
-		}
-	}
+const Servei = (props) => {
+    const { name, images, text } = props.servei
 
-	render() {
-		const {name, images, text} = this.props.servei
-		const imageExpanded = images[this.state.selected]
+    return (
+        <Container>
+            <Heading heading={name} />
 
-		return (
-			<Container>
-				<Heading heading={name} />
+            <p className="text-sm">{text}</p>
 
-				<p className="text-sm">{text}</p>
-
-				<div className="row row-cols-2 my-3 g-0">
-					<div className="col-6 col-sm-8 preview">
-						<Img fluid={imageExpanded.childImageSharp.fluid} alt={`Imatge ${name} ampliada`} />
-					</div>
-					<div className="col-6 col-sm-4 px-3">
-						<div className="thumbnails">
-							{images.map((item, index) =>
-								<div key={index} role="button" tabIndex="0"
-									onClick={() => this.setState({selected: index})}
-									onKeyDown={() => this.setState({selected: index})} >
-									<Img className="thumbnail" fluid={item.childImageSharp.fluid} alt={`Thumbnail ${name}`} />
-								</div>
-							)}
-						</div>
-					</div>
-				</div >
-
-				<div>
-					<AnchorLink
-						to="/#contacte"
-						className="btn btn-secondary mt-auto"
-						title="Demana pressupost"
-						stripHash
-					/>
-				</div >
-			</Container >
-		)
-	}
+            <Gallery name={name} images={images} />
+            <AnchorLink
+                to="/#contacte"
+                className="btn btn-secondary mt-auto"
+                title="Demana pressupost"
+                stripHash
+            />
+        </Container >
+    )
 }
 
 export default Servei

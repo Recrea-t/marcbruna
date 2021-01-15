@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image"
 import {Container, Row, Col} from "react-bootstrap"
 
 const Header = ({description, image}) => {
