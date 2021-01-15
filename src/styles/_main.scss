@@ -240,6 +240,17 @@ footer {
   margin-top: 3rem;
 }
 
+/* 404 */
+.not-found-container {
+  height: calc(100vh - 10.5rem);
+}
+
+@include media-breakpoint-up(sm) {
+  .not-found-container {
+    height: calc(100vh - 11rem);
+  }
+}
+
 /* Home header */
 
 .page-header {
@@ -439,17 +450,18 @@ footer {
   }
 }
 
+.consent-consent > div {
+  align-self: flex-end;
+}
+
+.alert-link:hover {
+  text-decoration: underline;
+}
+
 /* CookieConsent */
 @include media-breakpoint-up(sm) {
   .cookie-consent {
     margin-bottom: 1.5rem;
     color: $dark;
-
-    > div {
-      align-self: flex-end;
-    }
-    .alert-link:hover {
-      text-decoration: underline;
-    }
   }
 }
