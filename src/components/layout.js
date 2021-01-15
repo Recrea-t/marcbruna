@@ -40,8 +40,8 @@ const TemplateWrapper = ({
 				cookieName="gatsby-gdpr-google-analytics"
 				containerClasses="bg-secondary text-sm"
 				buttonWrapperClasses=""
-				buttonClasses="btn btn-sm btn-success"
-				declineButtonClasses="btn btn-sm btn-danger"
+				buttonClasses="btn btn-sm btn-primary"
+				declineButtonClasses="btn btn-sm btn-primary"
 				expires={150}>
 				<p>
 					Utilitzem galetes per distingir-vos d'altres usuaris en els nostres webs,

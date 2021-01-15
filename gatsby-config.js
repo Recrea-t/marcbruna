@@ -8,25 +8,24 @@ module.exports = {
 		"gatsby-plugin-sass",
 		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-anchor-links",
-		//{
-		//resolve: "gatsby-plugin-google-analytics",
-		//options: {
-		//trackingId: "",
-		//},
-		//},
+		{
+			resolve: "gatsby-plugin-google-analytics",
+			options: {
+				trackingId: "G-9PZC5GDJLK",
+			},
+		},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
 				googleAnalytics: {
-					trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID', // leave empty if you want to disable the tracker
+					trackingId: 'G-9PZC5GDJLK',
 					cookieName: 'gatsby-gdpr-google-analytics', // default
-					anonymize: true, // default
-					allowAdFeatures: false // default
 				},
 			},
 		},
 		"gatsby-plugin-sharp",
 		"gatsby-transformer-sharp",
+		"gatsby-plugin-robots-txt",
 		"gatsby-plugin-react-helmet",
 		"gatsby-plugin-sitemap",
 		{
