@@ -9,14 +9,10 @@ module.exports = {
 		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-anchor-links",
 		{
-			resolve: `gatsby-plugin-google-gtag`,
+			resolve: "gatsby-plugin-google-tagmanager",
 			options: {
-				trackingIds: [
-					"GTM-N54NL4G",
-				],
-				pluginConfig: {
-					head: true
-				},
+				id: "GTM-N54NL4G",
+				includeInDevelopment: false,
 			},
 		},
 		{
