@@ -18,9 +18,14 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
+				//googleAnalytics: {
+				//trackingId: 'UA-187465610-1',
+				//cookieName: 'gatsby-gdpr-google-analytics',
+				//},
 				googleTagManager: {
 					trackingId: 'GTM-N54NL4G',
 					cookieName: 'gatsby-gdpr-google-tagmanager',
+					gatsbyRouteChange: 'gatsby-route-change',
 				},
 			},
 		},
