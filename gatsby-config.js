@@ -5,15 +5,6 @@ console.log(config)
 module.exports = {
 	siteMetadata: config,
 	plugins: [
-		//{
-		//resolve: "gatsby-plugin-google-gtag",
-		//options: {
-		//trackingIds: ['UA-187465610-1',],
-		//pluginConfig: {
-		//head: true,
-		//},
-		//},
-		//},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
@@ -22,11 +13,6 @@ module.exports = {
 					cookieName: 'gatsby-gdpr-google-analytics',
 					anonymize: true,
 				},
-				//googleTagManager: {
-				//trackingId: 'GTM-N54NL4G',
-				//cookieName: 'gatsby-gdpr-google-tagmanager',
-				//gatsbyRouteChange: 'gatsby-route-change',
-				//},
 				environments: ['production', 'development'],
 			},
 		},
