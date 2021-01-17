@@ -223,6 +223,10 @@ a.nav-link, .navbar-text a {
 
     .dropdown-item {
       margin-right: 2rem;
+
+      &:active, &:hover, &:focus {
+        background-color: transparent;
+      }
     }
 
     .dropdown-menu {
