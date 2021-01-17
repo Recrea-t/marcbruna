@@ -39,8 +39,8 @@ const TemplateWrapper = ({
 				location="bottom"
 				buttonText="Acceptar"
 				onAccept={() => {
-					console.log('accepted', location)
 					initializeAndTrack(location)
+					console.log('accepted and initiated')
 				}}
 				enableDeclineButton
 				declineButtonText=""

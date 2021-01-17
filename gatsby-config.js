@@ -5,18 +5,15 @@ console.log(config)
 module.exports = {
 	siteMetadata: config,
 	plugins: [
-		"gatsby-plugin-sass",
-		"gatsby-plugin-fontawesome-css",
-		"gatsby-plugin-anchor-links",
-		{
-			resolve: "gatsby-plugin-google-gtag",
-			options: {
-				trackingIds: ['UA-187465610-1',],
-				pluginConfig: {
-					head: true,
-				},
-			},
-		},
+		//{
+		//resolve: "gatsby-plugin-google-gtag",
+		//options: {
+		//trackingIds: ['UA-187465610-1',],
+		//pluginConfig: {
+		//head: true,
+		//},
+		//},
+		//},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
@@ -33,6 +30,16 @@ module.exports = {
 				environments: ['production', 'development'],
 			},
 		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-187465610-1',
+				head: true,
+			},
+		},
+		"gatsby-plugin-sass",
+		"gatsby-plugin-fontawesome-css",
+		"gatsby-plugin-anchor-links",
 		"gatsby-plugin-sharp",
 		"gatsby-transformer-sharp",
 		"gatsby-plugin-robots-txt",
