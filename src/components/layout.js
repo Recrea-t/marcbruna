@@ -18,7 +18,7 @@ const TemplateWrapper = ({
 	datePublished,
 	children,
 }) => {
-	const {pathname} = useLocation()
+	const location = useLocation()
 
 	const {
 		defaultTitle,
@@ -32,16 +32,19 @@ const TemplateWrapper = ({
 		<React.Fragment>
 			<SEO title={title} description={description} image={image} isBlogPost={isBlogPost} datePublished={datePublished} />
 			<FixedNavbar organization={organization} social={social} />
-			<StaticNavbar defaultTitle={defaultTitle} menuLinks={menuLinks} pathname={pathname} />
+			<StaticNavbar defaultTitle={defaultTitle} menuLinks={menuLinks} pathname={location.pathname} />
 			{children}
 			<Footer title={defaultTitle} author={author} />
 			<CookieConsent
 				location="bottom"
 				buttonText="Acceptar"
-				onAccept={() => initializeAndTrack(pathname.location)}
+				onAccept={() => {
+					console.log('accepted', location)
+					initializeAndTrack(location)
+				}}
 				enableDeclineButton
 				declineButtonText=""
-				cookieName="gatsby-gdpr-google-tagmanager"
+				cookieName="gatsby-gdpr-google-analytics"
 				disableStyles={true}
 				containerClasses="cookie-consent fixed-bottom alert alert-dark alert-dismissible fade show text-sm d-flex flex-row justify-content-between"
 				buttonWrapperClasses="buttons"

@@ -9,24 +9,28 @@ module.exports = {
 		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-anchor-links",
 		{
-			resolve: "gatsby-plugin-google-tagmanager",
+			resolve: "gatsby-plugin-google-gtag",
 			options: {
-				id: "GTM-N54NL4G",
-				includeInDevelopment: false,
+				trackingIds: ['UA-187465610-1',],
+				pluginConfig: {
+					head: true,
+				},
 			},
 		},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
-				//googleAnalytics: {
-				//trackingId: 'UA-187465610-1',
-				//cookieName: 'gatsby-gdpr-google-analytics',
-				//},
-				googleTagManager: {
-					trackingId: 'GTM-N54NL4G',
-					cookieName: 'gatsby-gdpr-google-tagmanager',
-					gatsbyRouteChange: 'gatsby-route-change',
+				googleAnalytics: {
+					trackingId: 'UA-187465610-1',
+					cookieName: 'gatsby-gdpr-google-analytics',
+					anonymize: true,
 				},
+				//googleTagManager: {
+				//trackingId: 'GTM-N54NL4G',
+				//cookieName: 'gatsby-gdpr-google-tagmanager',
+				//gatsbyRouteChange: 'gatsby-route-change',
+				//},
+				environments: ['production', 'development'],
 			},
 		},
 		"gatsby-plugin-sharp",
