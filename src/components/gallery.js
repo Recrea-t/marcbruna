@@ -16,6 +16,7 @@ const Gallery = class extends React.Component {
 
 		const previewStyle = {
 			objectFit: "contain",
+			objectPosition: "top",
 			gridArea: "1 / 1 / 2 / 2",
 			maxWidth: "100%",
 		}
