@@ -30,6 +30,7 @@ const useSiteMetadata = () => {
 							twitter
 							fbAppID
 							instagram
+							pinterest
 						}
 						menuLinks {
 							name
