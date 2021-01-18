@@ -9,7 +9,7 @@ module.exports = {
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
 				googleAnalytics: {
-					trackingId: 'UA-187465610-1',
+					trackingId: process.env.GA_TRACKING_ID,
 					cookieName: 'gatsby-gdpr-google-analytics',
 					anonymize: true,
 				},
