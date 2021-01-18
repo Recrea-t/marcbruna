@@ -10,6 +10,9 @@ import {initializeAndTrack} from 'gatsby-plugin-gdpr-cookies'
 
 import useSiteMetadata from './siteMetadata'
 
+import '../utils/font-awesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
 const TemplateWrapper = ({
 	title,
 	description,
@@ -49,8 +52,9 @@ const TemplateWrapper = ({
 				declineButtonClasses="btn-close"
 				expires={150}>
 				<p>
+					<FontAwesomeIcon icon="cookie-bite" className="me-1" />
 					Utilitzem galetes per millorar la informació i optimitzar l'experiència de l'usuari de manera contínua.
-					Per a més informació, consulteu la <a href="/politica-de-privacitat" target="_blank" title="Política de cookies" className="alert-link"> política de galetes</a>.
+					Per a més informació, consulteu la <a href="/politica-de-galetes" target="_blank" title="Política de cookies" className="alert-link"> política de galetes</a>.
 				</p>
 			</CookieConsent>
 		</React.Fragment>
