@@ -4,11 +4,11 @@ title: Finestres
 description: ''
 finstral:
   name: Finestres de PVC i alumini
-  image: "../images/finestres/finestres-exterior-finstral.jpg"
+  image: "/images/finestres/finestres-exterior-finstral.jpg"
   catalog: https://www.finstral.com/es/information/catálogos-y-folletos/38-0.html
   configurator:
     name: La finestra perfecta
-    image: "../images/finestres/configurador-finestres-finstral.png"
+    image: "/images/finestres/configurador-finestres-finstral.png"
     url: https://www.finstral.com/es/ventanas/finstral-planner-ventanas/finstral-planner-ventanas/110-0.html
   text: 'Com a partner de la marca <a href="https://www.finstral.com/es/ventanas/ventanas/14-0.html"
     target="_blank">FINSTRAL</a>, oferim finestres amb grans capacitats en aïllament
@@ -26,9 +26,9 @@ products:
 
 '
   images:
-  - "../images/finestres/finestresfusta/Finestra_Fusta_01.jpg"
-  - "../images/finestres/finestresfusta/Finestra_Fusta_02.jpg"
-  - "../images/finestres/finestresfusta/Finestra_Fusta_03.jpg"
-  - "../images/finestres/finestresfusta/Finestra_Fusta_04.jpg"
+  - "/images/finestres/finestresfusta/Finestra_Fusta_01.jpg"
+  - "/images/finestres/finestresfusta/Finestra_Fusta_02.jpg"
+  - "/images/finestres/finestresfusta/Finestra_Fusta_03.jpg"
+  - "/images/finestres/finestresfusta/Finestra_Fusta_04.jpg"
 
 ---

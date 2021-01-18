@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 title: Cuines
-description: 
+description:
 products:
 - name: Cuines
   text: 'Grans, petites, amb illa, amb mobles alts, amb península... T''ajudem a crear
@@ -10,11 +10,13 @@ products:
 
 '
   images:
-  - "../images/cuines/cuines/Cuina_02_1.jpg"
-  - "../images/cuines/cuines/Cuina_02_3.jpg"
-  - "../images/cuines/cuines/Cuina_02_3.jpg"
-  - "../images/cuines/cuines/Cuina_02_4.jpg"
-  - "../images/cuines/cuines/Cuina_02_5.jpg"
-  - "../images/cuines/cuines/Cuina_02_6.jpg"
+  - "/images/cuines/cuines/Cuina_02_1.jpg"
+  - "/images/cuines/cuines/Cuina_02_3.jpg"
+  - "/images/cuines/cuines/Cuina_03_4.jpg"
+  - "/images/cuines/cuines/Cuina_03_5.jpg"
+  - "/images/cuines/cuines/Cuina_04_1.jpg"
+  - "/images/cuines/cuines/Cuina_04_2.jpg"
+  - "/images/cuines/cuines/Cuina_05_1.jpg"
+  - "/images/cuines/cuines/Cuina_05_3.jpg"
 
 ---
