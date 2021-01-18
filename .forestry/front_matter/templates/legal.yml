@@ -1,13 +1,15 @@
 ---
 label: Legal
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: templateKey
   label: templateKey
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Títol de la pàgina (SEO)
 - type: text
   name: description
-  label: description
+  label: Descripció de la pàgina (SEO)
