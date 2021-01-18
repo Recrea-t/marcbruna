@@ -1,7 +1,8 @@
 ---
 templateKey: product-page
-title: Finestres
-description: ''
+title: 'Finestres de fusta, d''alumini i PVC al Pallars Sobirà '
+description: Oferim finestres d'alumini i PVC de Finstral així com finestres de fusta
+  des de les Valls d'Àneu.
 finstral:
   name: Finestres de PVC i alumini
   image: "/images/finestres/finestres-exterior-finstral.jpg"
