@@ -13,7 +13,7 @@ const GeneralPage = ({data}) => {
 
 	return (
 		<Layout title={frontmatter.title} description={frontmatter.description}>
-			<Container dangerouslySetInnerHTML={{__html: html}}></Container>
+			<Container className="mt-3" dangerouslySetInnerHTML={{__html: html}}></Container>
 		</Layout>
 	)
 }
