@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
-title: Cuines
-description:
+title: Cuines a mida al Pallars Sobirà
+description: T'ajudem a crear la teva cuina a mida des de les Valls d'Àneu
 products:
 - name: Cuines
   text: 'Grans, petites, amb illa, amb mobles alts, amb península... T''ajudem a crear
