@@ -38,10 +38,7 @@ const TemplateWrapper = ({
 			<CookieConsent
 				location="bottom"
 				buttonText="Acceptar"
-				onAccept={() => {
-					initializeAndTrack(location)
-					console.log('accepted and initiated')
-				}}
+				onAccept={() => {initializeAndTrack(location)}}
 				enableDeclineButton
 				declineButtonText=""
 				cookieName="gatsby-gdpr-google-analytics"

@@ -16,13 +16,6 @@ module.exports = {
 				environments: ['production', 'development'],
 			},
 		},
-		//{
-		//resolve: `gatsby-plugin-google-analytics`,
-		//options: {
-		//trackingId: 'UA-187465610-1',
-		//head: true,
-		//},
-		//},
 		"gatsby-plugin-sass",
 		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-anchor-links",
