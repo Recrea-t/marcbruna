@@ -242,6 +242,15 @@ a.nav-link, .navbar-text a {
 
 footer {
   margin-top: 3rem;
+
+  a {
+    color: $white;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
 }
 
 /* 404 */

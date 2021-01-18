@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Inici
-description: El teu fuster al Pallars Sobirà
+title: El teu fuster al Pallars Sobirà
+description: "Empresa dedicada a la fabricació i insta·lació de fusteria: tancaments interiors i exteriors, parquets, cuines, mobiliari a mida, fusteria exterior... Tot el que t'imaginis amb fusta, ho podem fer!"
 image: /images/heading1.jpg
 testimonials:
 - name: Bar Bodega La Tona

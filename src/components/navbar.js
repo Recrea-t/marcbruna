@@ -7,7 +7,6 @@ import logo from '../images/logo.svg'
 import {AnchorLink} from "gatsby-plugin-anchor-links";
 
 const FixedNavbar = ({organization, social}) => {
-	console.log(social.fbAppId)
 	return (
 		<Navbar bg="primary" expand="lg" fixed="top">
 			<Container>

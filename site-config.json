@@ -6,7 +6,8 @@
 	"image": "/images/logo.svg",
 	"color": "#fff",
 	"author": {
-		"name": "Recrea't"
+		"name": "Recrea't",
+		"url": "https://recreat.cat"
 	},
 	"organization": {
 		"name": "Marc Bruna Fuster",
