@@ -13,3 +13,5 @@ fields:
 - type: text
   name: description
   label: Descripció de la pàgina (SEO)
+pages:
+- src/pages/politica-de-galetes.md
