@@ -9,7 +9,7 @@ sections:
   label: Pàgina d'inici
 - type: directory
   path: src/pages
-  label: Serveis
+  label: Pàgines
   create: documents
   match: "*.md"
   exclude: index.md
@@ -17,6 +17,7 @@ sections:
   templates:
   - cuines
   - portes
+  - legal
 - type: document
   path: site-config.json
   label: Site MetaData
