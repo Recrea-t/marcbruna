@@ -1,7 +1,8 @@
 ---
 templateKey: product-page
-title: Portes
-description: ''
+title: Portes de fusta, d'alumini i PVC al Pallars Sobirà
+description: Portes d'entrada d'alumini i de PVC de Finstral, portes d'entrada de
+  fusta i interiors.
 finstral:
   name: Portes d'entrada d'alumini i PVC
   image: "/images/portes/portes-exterior-finstral.jpg"
