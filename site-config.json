@@ -1,82 +1,88 @@
 {
-	"title": "Marc Bruna Fuster",
-	"titleTemplate": "%s · Marc Bruna Fuster",
-	"description": "El teu fuster al Pallars Sobirà",
-	"siteUrl": "https://marcbrunafuster.cat",
-	"image": "/images/logo.svg",
-	"color": "#fff",
-	"author": {
-		"name": "Recrea't",
-		"url": "https://recreat.cat"
-	},
-	"organization": {
-		"name": "Marc Bruna Fuster",
-		"url": "https://marcbrunafuster.cat",
-		"logo": "/images/icon.png",
-		"email": "info@marcbrunafuster.cat",
-		"phone": {
-			"number": 34625453140,
-			"title": "(+34) 625 453 140"
-		},
-		"address": "POLÍGON INDUSTRIAL ELS SALACONS 7A - 8A,<br /> 25560 SORT"
-	},
-	"social": {
-		"twitter": "",
-		"fbAppID": "1008800389212863",
-		"instagram": "marcbruna_fuster",
-		"pinterest": "marcbrunafuster"
-	},
-	"menuLinks": [
-		{
-			"name": "Inici",
-			"link": "/",
-			"submenuLinks": []
-		},
-		{
-			"name": "Serveis",
-			"link": "dropdown",
-			"submenuLinks": [
-				{
-					"name": "Portes",
-					"link": "/portes",
-					"image": "portes.svg"
-				},
-				{
-					"name": "Finestres",
-					"link": "/finestres",
-					"image": "finestres.svg"
-				},
-				{
-					"name": "Cuines",
-					"link": "/cuines",
-					"image": "cuines.svg"
-				},
-				{
-					"name": "Mobles a mida",
-					"link": "/mobles-a-mida",
-					"image": "mobles-a-mida.svg"
-				},
-				{
-					"name": "Parquets",
-					"link": "/parquets",
-					"image": "parquets.svg"
-				},
-				{
-					"name": "Fusteria en general",
-					"link": "/fusteria-en-general",
-					"image": "fusteria-en-general.svg"
-				}
-			]
-		},
-		{
-			"name": "Clients",
-			"link": "/#clients",
-			"submenuLinks": []
-		},
-		{
-			"name": "Contacte",
-			"link": "/#contacte",
-			"submenuLinks": []
-		}
-	]
+  "title": "Marc Bruna Fuster",
+  "titleTemplate": "%s · Marc Bruna Fuster",
+  "description": "El teu fuster al Pallars Sobirà",
+  "siteUrl": "https://marcbrunafuster.cat",
+  "image": "/images/logo.svg",
+  "color": "#fff",
+  "author": {
+    "name": "Recrea't",
+    "url": "https://recreat.cat"
+  },
+  "organization": {
+    "name": "Marc Bruna Fuster",
+    "url": "https://marcbrunafuster.cat",
+    "logo": "/images/icon.png",
+    "email": "info@marcbrunafuster.cat",
+    "phone": {
+      "number": 34625453140,
+      "title": "(+34) 625 453 140"
+    },
+    "address": "POLÍGON INDUSTRIAL ELS SALACONS 7A - 8A,<br /> 25560 SORT"
+  },
+  "social": {
+    "twitter": "",
+    "fbAppID": "1008800389212863",
+    "instagram": "marc_bruna_fuster",
+    "pinterest": "marcbrunafuster"
+  },
+  "menuLinks": [
+    {
+      "name": "Inici",
+      "link": "/",
+      "submenuLinks": [
+
+      ]
+    },
+    {
+      "name": "Serveis",
+      "link": "dropdown",
+      "submenuLinks": [
+        {
+          "name": "Portes",
+          "link": "/portes",
+          "image": "portes.svg"
+        },
+        {
+          "name": "Finestres",
+          "link": "/finestres",
+          "image": "finestres.svg"
+        },
+        {
+          "name": "Cuines",
+          "link": "/cuines",
+          "image": "cuines.svg"
+        },
+        {
+          "name": "Mobles a mida",
+          "link": "/mobles-a-mida",
+          "image": "mobles-a-mida.svg"
+        },
+        {
+          "name": "Parquets",
+          "link": "/parquets",
+          "image": "parquets.svg"
+        },
+        {
+          "name": "Fusteria en general",
+          "link": "/fusteria-en-general",
+          "image": "fusteria-en-general.svg"
+        }
+      ]
+    },
+    {
+      "name": "Clients",
+      "link": "/#clients",
+      "submenuLinks": [
+
+      ]
+    },
+    {
+      "name": "Contacte",
+      "link": "/#contacte",
+      "submenuLinks": [
+
+      ]
+    }
+  ]
 }
