@@ -8,6 +8,7 @@ const Header = ({description, image}) => {
 			<Img
 				fluid={image.childImageSharp.fluid}
 				alt={description}
+				loading="eager"
 				className="page-header-image" />
 			<Container>
 				<Row className="justify-content-start">
