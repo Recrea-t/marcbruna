@@ -29,7 +29,13 @@ const Product = (props) => {
 
 
 	return (
-		<div className="servei">
+		<div
+			className="servei"
+			data-sal="zoom-in"
+			data-sal-delay="300"
+			data-sal-duration="700"
+			data-sal-easing="ease-out-back"
+		>
 			<img src={publicURL} alt={name} />
 			<div className="d-flex flex-column">
 				<Link to={link} className="w-100 btn btn-primary mt-auto" title={name}>{name}</Link>

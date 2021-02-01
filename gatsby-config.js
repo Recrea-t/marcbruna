@@ -4,6 +4,9 @@ console.log(config)
 
 module.exports = {
     siteMetadata: config,
+    flags: {
+        THE_FLAG: false
+    },
     plugins: [
         {
             resolve: `gatsby-plugin-metricool`,
@@ -14,6 +17,7 @@ module.exports = {
         "gatsby-plugin-sass",
         "gatsby-plugin-fontawesome-css",
         "gatsby-plugin-anchor-links",
+        "gatsby-plugin-scroll-reveal",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         "gatsby-plugin-robots-txt",
