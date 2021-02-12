@@ -387,7 +387,7 @@ footer {
   }
 
   .client-logo {
-    min-width: 15%;
+    max-width: 15%;
   }
 }
 
@@ -398,7 +398,7 @@ footer {
   }
 
   .client-logo {
-    min-width: 25%;
+    max-width: 25%;
   }
 }
 
@@ -415,49 +415,47 @@ footer {
 }
 
 .preview {
-  display: grid;
-
-  > div {
-    position: relative;
-    display: grid;
-    overflow: visible !important;
-
-    > div {
-      padding-bottom: 100% !important;
-      display: block;
-      grid-area: 1 / 1 / 2 / 2;
-    }
-  }
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: top;
+  opacity: 1;
+  transition: opacity .3s;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 
   @include media-breakpoint-down(sm) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 
-  > div {
-    width: 100%;
+  .gatsby-image-wrapper {
+    position: relative;
+    overflow: hidden;
     height: 100%;
 
-    &:hover, &:focus, &:active {
-      outline: 0;
-      opacity: 0.7;
+    &::before {
+      content: "";
+      padding-top: 100%;
+      display: block;
     }
 
     > div {
-      position: relative;
-      display: grid;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
 
-      > div {
-        padding-bottom: 100% !important;
-        display: block;
-        grid-area: 1 / 1 / 2 / 2;
+    img {
+      transform-origin: 45% 45%;
+      transition: transform .25s, visibility .25s ease-in;
+
+      &:hover, &:focus, &:active {
+        transform: scale(2);
       }
     }
   }

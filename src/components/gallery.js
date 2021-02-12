@@ -1,62 +1,38 @@
-import React from "react"
-import {Row, Col} from "react-bootstrap"
-import Img from "gatsby-image"
+import React from "react";
 
-const Gallery = class extends React.Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			selected: 0,
-		}
-	}
+import { Row, Col, Image } from "react-bootstrap";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-	render() {
-		const {name, images} = this.props
-		const imageExpanded = images[this.state.selected]
+const Gallery = ({ name, images }) => {
+  const [imageSelected, setImageSelected] = React.useState(images[0]);
 
-		const previewStyle = {
-			objectFit: "contain",
-			objectPosition: "top",
-			gridArea: "1 / 1 / 2 / 2",
-			maxWidth: "100%",
-		}
+  return (
+    <Row className="row-cols-1 row-cols-sm-2 my-3 g-0">
+      <Col className="col-sm-8 text-center" style={{ height: "75vh" }}>
+        <Image
+          className="preview"
+          {...getImage(imageSelected).images.sources[0]}
+          alt={`Imatge ${name} ampliada`}
+        />
+      </Col>
+      <Col className="col-sm-4 pt-3 py-sm-0 px-sm-3">
+        <div className="gallery">
+          {images.map((item, index) => (
+            <GatsbyImage
+              key={index}
+              role="button"
+              tabIndex="0"
+              className="shadow-sm"
+              onClick={() => setImageSelected(item)}
+              onKeyDown={() => setImageSelected(item)}
+              alt={`Thumbnail ${name}`}
+              image={getImage(item)}
+            />
+          ))}
+        </div>
+      </Col>
+    </Row>
+  );
+};
 
-		const thumbnailStyle = {
-			gridArea: "1 / 1 / 2 / 2",
-			maxWidth: "100%",
-			margin: "auto"
-		}
-
-		return (
-			<Row className="row-cols-1 row-cols-sm-2 my-3 g-0" >
-				<Col className="col-sm-8 preview">
-					<Img
-						objectFit="contain"
-						imgStyle={previewStyle}
-						fluid={imageExpanded.childImageSharp.fluid}
-						alt={`Imatge ${name} ampliada`} />
-				</Col>
-				<Col className="col-sm-4 pt-3 py-sm-0 px-sm-3">
-					<div className="gallery" >
-						{
-							images.map((item, index) =>
-								<div key={index} role="button" tabIndex={0}
-									className="shadow-sm"
-									onClick={() => this.setState({selected: index})}
-									onKeyDown={() => this.setState({selected: index})}>
-									<Img
-										imgStyle={thumbnailStyle}
-										alt={`Thumbnail ${name}`}
-										fluid={item.childImageSharp.fluid} />
-								</div>
-							)
-						}
-					</div >
-				</Col >
-			</Row >
-		)
-	}
-}
-
-export default Gallery
-
+export default Gallery;
