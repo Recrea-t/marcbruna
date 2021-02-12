@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: config,
   flags: {
     THE_FLAG: false,
+    DEV_SSR: false,
   },
   plugins: [
     {
@@ -24,6 +25,7 @@ module.exports = {
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    //"gatsby-plugin-remove-serviceworker",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

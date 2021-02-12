@@ -48,7 +48,7 @@ const Logo = (props) => {
       href={url}
       title={name}
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       <GatsbyImage
         image={getImage(logo)}

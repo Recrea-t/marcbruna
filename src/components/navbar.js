@@ -23,7 +23,7 @@ const FixedNavbar = ({ organization, social }) => {
             href="https://finstral.com"
             title="Finstral"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img src={finstral} alt="Finstral" />
           </a>
