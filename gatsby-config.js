@@ -25,7 +25,6 @@ module.exports = {
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    //"gatsby-plugin-remove-serviceworker",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -43,14 +42,16 @@ module.exports = {
       },
     },
     // The offline plugin must be listed after the manifest plugin
-    {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        workboxConfig: {
-          globPatterns: ["**/icon-path*"],
-        },
-      },
-    },
+    //"gatsby-plugin-remove-serviceworker",
+    "gatsby-plugin-offline",
+    //{
+    //resolve: "gatsby-plugin-offline",
+    //options: {
+    //workboxConfig: {
+    //globPatterns: ["**/icon-path*"],
+    //},
+    //},
+    //},
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
