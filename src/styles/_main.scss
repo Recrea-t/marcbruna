@@ -323,6 +323,7 @@ footer {
 .serveis {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 5rem;
   justify-items: center;
   justify-content: space-between;
@@ -334,11 +335,14 @@ footer {
     align-self: end;
     text-align: center;
 
-    img {
-      padding: 1rem;
-      width: 100%;
-      height: fit-content;
-      object-fit: contain;
+    > div:first-of-type {
+
+      img {
+        padding: 1rem;
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -353,6 +357,7 @@ footer {
   .serveis {
     column-gap: 10rem;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
