@@ -135,11 +135,17 @@ a.nav-link, .navbar-text a {
 
 .logo-finstral {
   position: relative;
-  bottom: 1px;
-  height: .8em;
 
   &:hover {
     opacity: .8;
+  }
+
+  img {
+    position: absolute;
+    top: .25em;
+    right: 0;
+    left: .4em;
+    height: .8em;
   }
 }
 
