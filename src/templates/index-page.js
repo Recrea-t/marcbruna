@@ -14,7 +14,7 @@ import Products from "../components/products";
 import Testimonials from "../components/testimonials";
 import Contact from "../components/contact";
 
-export const IndexPageTemplate = ({ frontmatter }) => {
+const IndexPageTemplate = ({ frontmatter }) => {
   return (
     <React.Fragment>
       <Container>

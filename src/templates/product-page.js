@@ -9,7 +9,7 @@ import Layout from "../components/layout";
 import Finstral from "../components/finstral";
 import Servei from "../components/servei";
 
-export const ProductPageTemplate = ({ frontmatter }) => {
+const ProductPageTemplate = ({ frontmatter }) => {
   return (
     <React.Fragment>
       {frontmatter.finstral && <Finstral item={frontmatter.finstral} />}
