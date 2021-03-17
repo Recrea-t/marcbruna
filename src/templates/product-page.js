@@ -79,9 +79,26 @@ export const query = graphql`
         products {
           name
           text
-          images {
+          thumbnails: images {
+            id
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              gatsbyImageData(
+                width: 200
+                aspectRatio: 1
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                transformOptions: { fit: COVER, cropFocus: ENTROPY }
+              )
+            }
+          }
+          images {
+            id
+            childImageSharp {
+              gatsbyImageData(
+                width: 800
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
         }
