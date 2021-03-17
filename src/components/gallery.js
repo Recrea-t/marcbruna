@@ -13,6 +13,7 @@ const Gallery = ({ name, images, thumbnails }) => {
           <GatsbyImage
             key={item.id}
             className={item.id === imageSelected.id ? "is-active" : ""}
+            loading={item.id === imageSelected.id ? "eager" : "lazy"}
             objectFit="contain"
             alt={name}
             image={getImage(item)}

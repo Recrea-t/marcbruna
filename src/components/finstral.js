@@ -21,11 +21,13 @@ const Finstral = (props) => {
           className="d-none d-sm-block col-sm-7"
           image={getImage(image)}
           alt={`${name} de Finstral`}
+          loading="eager"
         />
 
         <div className="col col-sm-5 bg-primary p-3 d-flex flex-column mx-auto">
           <div className="m-3">
             <GatsbyImage
+              loading="eager"
               image={getImage(configurator.image)}
               alt="Configurador de Finstral"
             />
