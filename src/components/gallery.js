@@ -29,7 +29,7 @@ const Gallery = ({ name, images, thumbnails }) => {
               tabIndex="0"
               className={
                 item.id === imageSelected.id
-                  ? "border border-secondary border-1"
+                  ? "shadow-lg border border-secondary border-1"
                   : "shadow"
               }
               onClick={() => setImageSelected(item)}
