@@ -382,6 +382,7 @@ footer {
 .testimonials > div {
   display: flex;
   flex-flow: row nowrap;
+  width: 100%;
 
   &.justify-content-space-evenly {
       justify-content: space-evenly;
@@ -403,7 +404,8 @@ footer {
   }
 
   .client-logo {
-    max-width: 25%;
+    max-width: 45%;
+    margin-right: 1.5rem;
   }
 }
 

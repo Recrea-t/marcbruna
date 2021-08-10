@@ -16,11 +16,11 @@ testimonials:
   url: ''
 - name: L'Orri
   logo: "/images/logo-orri.png"
-  text: ''
   url: https://www.orridelpallars.cat
+  text: ''
 - name: El Detallista
   logo: "/images/logo-detallista.png"
-  text: ''
   url: ''
+  text: ''
 
 ---
