@@ -6,8 +6,8 @@
   "image": "/images/logo.svg",
   "color": "#fff",
   "author": {
-    "name": "Recrea't",
-    "url": "https://recreat.cat"
+    "name": "Recreant",
+    "url": "https://recreant.cat"
   },
   "organization": {
     "name": "Marc Bruna Fuster",
@@ -30,9 +30,7 @@
     {
       "name": "Inici",
       "link": "/",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     },
     {
       "name": "Serveis",
@@ -73,16 +71,12 @@
     {
       "name": "Clients",
       "link": "/#clients",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     },
     {
       "name": "Contacte",
       "link": "/#contacte",
-      "submenuLinks": [
-
-      ]
+      "submenuLinks": []
     }
   ]
 }
