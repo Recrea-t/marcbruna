@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 title: El teu fuster al Pallars Sobirà
-description: 'Empresa dedicada a la fabricació i insta·lació de fusteria: portes,
-  finestres, parquets, cuines, mobiliari a mida, fusteria exterior... Tenim el taller
-  de fusteria a Sort'
+description: 'Empresa dedicada a la fabricació i insta·lació de fusteria a Sort, Pallars
+  Sobirà: portes, finestres, parquets, cuines, mobiliari a mida, fusteria exterior...
+  Tenim el taller de fusteria a Sort'
 image: "/images/heading1.jpg"
 testimonials:
 - name: Ajuntament d'Esterri d'Àneu
