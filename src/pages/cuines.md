@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Cuines a mida al Pallars Sobirà
+title: Cuines a mida a Sort, Pallars Sobirà
 description: T'ajudem a crear la teva cuina a mida des de les Valls d'Àneu
 products:
 - name: Cuines
@@ -8,7 +8,7 @@ products:
     la teva cuina a mida. T''assessorem en l''etapa de disseny i t''oferim materials
     d''alta qualitat perquè puguis gaudir de la cuina dels teus somnis.
 
-'
+    '
   images:
   - "/images/cuines/cuines/Cuina_02_1.jpg"
   - "/images/cuines/cuines/Cuina_02_3.jpg"
