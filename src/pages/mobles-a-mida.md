@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Mobles a mida al Pallars Sobirà
+title: Mobles a mida a Sort, Pallars Sobirà
 description: 'Fabriquem tot tipus de mobiliari a mida des de les Valls d''Àneu: armaris,
   mobles de menjador i dormitori, mobiliari d''oficina i comerç'
 products:
@@ -9,7 +9,7 @@ products:
     mobiliari d''oficina i comerç... Treballem amb diferents materials per poder-te
     oferir la millor solució.
 
-'
+    '
   images:
   - "/images/moblesamida/moblesamida/Moble_A_Mida_01.jpg"
   - "/images/moblesamida/moblesamida/Moble_A_Mida_02.jpg"
