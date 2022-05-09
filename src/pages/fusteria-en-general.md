@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Fusteria al Pallars Sobirà
+title: Fusteria a Sort, Pallars Sobirà
 description: Realitzem tot tipus de treballs en fusta per complementar casa vostra,
   tals com escales, revestiments de parets i sostres, fusteria d'exterior
 products:
@@ -10,7 +10,7 @@ products:
     revestiments, balcons...). Si tens alguna necessitat, consulta''ns, segur que
     trobem una sol·lució.
 
-'
+    '
   images:
   - "/images/fusteriaengeneral/fusteriaengeneral/Fusteria_GRAL_01.jpg"
   - "/images/fusteriaengeneral/fusteriaengeneral/Fusteria_GRAL_02.jpg"
