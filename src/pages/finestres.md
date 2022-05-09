@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: 'Finestres de fusta, d''alumini i PVC al Pallars Sobirà '
+title: 'Finestres de fusta, d''alumini i PVC a Sort, Pallars Sobirà '
 description: Oferim finestres d'alumini i PVC de Finstral així com finestres de fusta
   des de les Valls d'Àneu.
 finstral:
