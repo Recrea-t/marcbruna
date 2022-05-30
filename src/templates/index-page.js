@@ -14,7 +14,7 @@ import Contact from "../components/contact";
 const IndexPageTemplate = ({ frontmatter }) => {
   return (
     <React.Fragment>
-      <Container className="final">
+      <Container className="final" className="mb-5">
         <Heading heading="Comunicat de tancament" />
         <p className="text-md">
           Per motius personals em veig obligat a aturar l’activitat i tancar la
