@@ -148,42 +148,6 @@ const StaticNavbar = class extends React.Component {
               />
             </Navbar.Brand>
           </Col>
-
-          <Navbar.Toggle
-            className="ms-auto mb-4 p-0 border-0"
-            aria-controls="basic-navbar-nav"
-            aria-label="Toggle navigation"
-            onClick={() => this.toggleHamburger()}
-          />
-
-          <div className="align-self-end">
-            <div
-              className={`navbar-collapse offcanvas-collapse px-0 ${this.state.navBarActiveClass}`}
-            >
-              <Container className="pt-3 pt-lg-0">
-                <Navbar.Toggle
-                  className="btn-close btn-close-white w-100"
-                  aria-label="Toggle navigation"
-                  aria-controls="basic-navbar-nav"
-                  onClick={() => this.toggleHamburger()}
-                />
-                <Nav
-                  className="me-lg-auto mb-0 fw-bold float-end"
-                  activeKey={this.props.pathname}
-                  id="basic-navbar-nav"
-                >
-                  {this.props.menuLinks.map((link, index) => (
-                    <MenuLink
-                      key={index}
-                      pathname={this.props.pathname}
-                      link={link}
-                      onClick={() => this.toggleHamburger()}
-                    />
-                  ))}
-                </Nav>
-              </Container>
-            </div>
-          </div>
         </Container>
       </Navbar>
     );

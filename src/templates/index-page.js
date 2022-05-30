@@ -8,26 +8,34 @@ import { Container } from "react-bootstrap";
 //import useWindowSize from "../utils/useWindowSize";
 
 import Layout from "../components/layout";
-import Header from "../components/header";
 import Heading from "../components/heading";
-import Products from "../components/products";
-import Testimonials from "../components/testimonials";
 import Contact from "../components/contact";
 
 const IndexPageTemplate = ({ frontmatter }) => {
   return (
     <React.Fragment>
-      <Container>
-        <Heading heading="Serveis" id="serveis" />
-        <Products />
-      </Container>
-
-      <Container>
-        <Heading heading="Clients" id="clients" />
-      </Container>
-
-      <Container fluid className="scrollable bg-primary">
-        <Testimonials testimonials={frontmatter.testimonials} />
+      <Container className="final">
+        <Heading heading="Comunicat de tancament" />
+        <p className="text-md">
+          Per motius personals em veig obligat a aturar l’activitat i tancar la
+          fusteria.
+        </p>
+        <p className="text-md">
+          Fa nou anys que vaig iniciar aquesta aventura, amb molta il·lusió i
+          amb uns objectius molt clars. A dia d’avui, no tinc ja ni aquella
+          il·lusió del principi, ni la motivació suficient per seguir. Les
+          darreres setmanes m’he trobat amb una sèrie d’entrebancs que no m’han
+          deixat altra opció.
+        </p>
+        <p className="text-md">
+          No ha estat una decisió fàcil, ben al contrari, és dur i dolorós
+          decidir destruir allò que m’ha costat anys de tirar endavant. A pesar
+          del moment difícil en que em trobo, però, m’enduc una gran experiència
+          personal i professional.
+        </p>
+        <p className="text-md">
+          Només em queda agrair la confiança dipositada en mi tot aquest temps
+        </p>
       </Container>
 
       <Container>
@@ -50,7 +58,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout title={frontmatter.title} description={frontmatter.description}>
-      <Header description={frontmatter.description} image={frontmatter.image} />
       <IndexPageTemplate frontmatter={frontmatter} />
     </Layout>
   );
@@ -72,29 +79,6 @@ export const query = graphql`
       frontmatter {
         title
         description
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 1380
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-        testimonials {
-          name
-          text
-          url
-          logo {
-            childImageSharp {
-              gatsbyImageData(
-                width: 200
-                placeholder: TRACED_SVG
-                formats: [AUTO, WEBP, AVIF]
-              )
-            }
-          }
-        }
       }
     }
   }

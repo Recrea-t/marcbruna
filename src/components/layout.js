@@ -22,13 +22,8 @@ const TemplateWrapper = ({
 }) => {
   const location = useLocation();
 
-  const {
-    defaultTitle,
-    author,
-    organization,
-    social,
-    menuLinks,
-  } = useSiteMetadata();
+  const { defaultTitle, author, organization, social, menuLinks } =
+    useSiteMetadata();
 
   return (
     <React.Fragment>
